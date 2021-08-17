@@ -1,0 +1,201 @@
+*,*::before,*::after{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-size: 'Ubuntu', sans-serif;
+}
+
+/* header styling start*/
+.header-div{
+    background-color: rgb(220, 4, 42);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+}
+
+.lists{
+    display: flex;
+    align-items: center;
+}
+.lists .list-item{
+display: inline-block;
+list-style-type:none;
+}
+.lists .list-link{
+    color: #fff;
+    font-size: 18px;
+    padding:20px;
+    text-decoration: none;
+    align-items: center;
+    font-family: Ubuntu, sans-serif;
+    font-weight:400;
+font-style:normal;
+font-variant:normal;
+text-transform:capitalize;
+}
+
+.list-item .signup{
+    background-color: #fff;
+    color:rgb(220, 4, 42);
+    height: 30px;
+    padding: 10px;
+}
+
+/* header styling end */
+.ordering-heading-contents{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.ordering-heading-main,.ordering-heading-sub{
+    display: block;
+    font-size: 50px;
+    font-family: Ubuntu,sans-serif;
+    color:#383838;
+}
+.ordering-form-div{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.ordering-from-text{
+    font-size: 18px;
+    font-family: Ubuntu,sans-serif;
+    color:#383838;
+    font-weight:600;
+    font-style:normal;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+/* styling of order input start */
+.input-content{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.first-select{
+    display: block;
+}
+.second-select{
+    display: block;
+    margin-top: 4%;
+}
+
+select{
+    width: 400px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: rgb(245, 245, 245);  
+    color:rgb(182, 165, 165); 
+    border:1p solid rgb(182, 165, 165);
+    border-radius: 3px;
+    line-height: 27px;
+    font-family: Ubuntu,sans-serif;
+}
+
+/* styling of order input end */
+/* styling of how it works start */
+
+hr{
+    background-color: rgb(220, 4, 42);
+}
+.how-it-works-heading{
+    margin-top:7%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #383838;
+    font-size:50px;   
+}
+.location-img{
+    width: 255px;
+    display: block;
+    height: 255px;
+}
+.select-location,.choose-meal,.delivery{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.location-heading,.meal-heading{
+color:#dc042a;
+font-size: 24px;
+font-family: Ubuntu,sans-serif;
+font-weight:600;
+font-style:normal;
+font-variant:normal;
+padding-top: 10px;
+text-align: center;
+}
+
+.location-paragraph{
+     color:rgb(56, 56, 56);
+font-size: 18px;
+font-family: Ubuntu,sans-serif;
+font-weight:400;
+font-style:normal;
+font-variant:normal;
+padding-top: 10px
+}
+/* styling of how it works end */
+/* styling of app-store div start*/
+.app-store-container{
+    background-color: rgb(220, 4, 42);
+    margin-top: 12%;
+}
+.app-store-text{
+    color: #fff;
+    font-size: 18px;
+    font-family: Ubuntu,serif;
+    line-height: 27px;
+    font-weight: 400;
+   display: block;
+    width: 98%;
+}
+.app-store-text-div{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+.appstore-images-link{
+    display: inline-block;
+}
+.app-store-img{
+    height: 50px;
+}
+.app-store{
+    margin-left: 10px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10%;
+}
+.social-media-div a{
+    padding: 10px;
+}
+
+ 
+
+/* styling of app-store div end*/
+
