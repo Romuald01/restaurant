@@ -1,0 +1,32 @@
+.collapse{
+    position: absolute;
+    right:0%!important;
+}
+.nav-bg{
+    background-color: rgb(220, 4, 42) !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.nav-item{
+    padding: 6px;
+}
+.nav-link{
+    color:#fff !important;
+    font-size: 18px !important;
+    font-family: Ubuntu,sans-serif;
+    padding: 5px;
+}
+
+.signup-box{
+    background-color: #fff;
+    /* height: 30px; */
+}
+.signup-link{
+    color: rgb(220, 4, 42) !important;
+    /* padding: 4px !important; */
+}
+@media screen and (max-width:991px){
+    .collapse{
+        position: static !important;
+    }
+}

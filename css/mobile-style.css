@@ -1,0 +1,52 @@
+@media screen and (max-width:480px){
+    .burger-nav{
+        display: block;
+        width: 100%;
+        height: 40px;
+        background: url(../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-color: #404040;
+        cursor: pointer;
+        border:1px solid green;
+        background-position: right;
+    }
+    header .wrapper{
+        width: 100%;
+        padding:0px;
+
+    }
+    header nav ul{
+        overflow:hidden;
+        background:red;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        transition: all .3s;
+        
+    }
+    .bb{
+            /* margin-top:-7%; */
+    }
+    header nav ul.open{
+        top: 0%;
+        /* height: 100%; */
+    }
+    header nav ul li{
+        list-style-type: none;
+        float: none;
+        text-align: left;
+        width: 100%;
+        text-decoration: none;
+        margin: 0;
+
+    }
+    header nav ul li a{
+        display: block;
+        color: #fff;
+        padding: 10px;
+        border-bottom: 1px solid #404040;
+        margin: 0;
+    }
+
+}
