@@ -1,0 +1,196 @@
+/* store styling start here */
+.store-background{
+    background-image: url("../images/store-location.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.location-div{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid red;
+    padding: 10px;
+    border: none;
+    box-shadow: -1px -2px 19px -11px rgb(0 0 0 / 75%);
+}
+.location-img-box{
+    display: block;
+    width: 100%;   
+}
+.location-image{
+    width: 100%;
+    display:block;
+    object-fit: cover;
+    height: 240px;
+}
+.location-detail-box{
+    display: flex;
+    float: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.view-location-button{
+    border: none;
+    background-color: rgb(220, 4, 42);
+    padding: 10px;
+    text-transform: uppercase;
+    color:#fff;
+    border-radius: 3px;
+
+}
+.view-location-button {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+    border: 2px solid #dc042a;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    background-color: #dc042a;
+    cursor: pointer;
+    color:#fff
+}
+.view-location-button:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.view-location-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,-webkit-transform .4s;
+}
+.view-location-button:hover{
+  
+}
+.location-name{
+    color: #383838;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.store-line{
+    margin-top: 7%;
+}
+
+.leave-message-heading,.service-hours{
+    color:rgb(220, 4, 42);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.store-form input{
+    width: 100%;
+    padding: 6px;
+   
+}
+.store-form input[type="text"],input[type="email"]{
+    border-bottom:none; 
+}
+.store-form textarea{
+  width: 100%;
+  border-bottom:none;
+   height: 100px;
+   border-bottom:none;
+   outline-color:#dc042a ;
+}
+.store-form input[type="text"],.store-form input[type="email"]:focus{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline-color: #dc042a ;
+}
+
+.store-form input[type="submit"]{
+        background-color:#dc042a;
+        border-radius: 2px;
+        border: none;
+        margin-top: -10px;
+        color:#fff
+    }
+.vertical-line-div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.vertical-line{
+    border-left: 2px solid rgb(220, 4, 42);
+    height: 250px;
+}
+.schedule-content{
+    display: flex;
+    flex-direction:column;
+}
+
+.schedule-content span{
+    display: flex;
+    flex-direction: column;
+}
+.schedule-content .second-number{
+    display: inliine-block;
+}
+.schedule-content .day-and-time{
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule-content .phone-content {
+    display: flex;
+    flex-direction: row; 
+}
+
+.head-office-main{
+font-size: 20px;
+font-weight: 600;
+}
+
+.head-office-sub{
+    font-size: 18px;
+    font-weight: 400;
+    color:#383838;
+    padding-top: 5px;
+}
+.day-and-time .time{
+    margin-left: 10px;
+    padding-left: 30px;
+}
+.number-link,.mail-link,.number-link .mail-link:link,.number-link .mail-link:visited{
+    color:#383838;  
+}
+.social-img:hover{
+    transform: rotate(360deg);
+    background-color: #fff;
+    border-radius: 50%;
+    border:1px solid red;
+    transition: all 1s;
+    height: 30px;
+    padding: 10px;
+}
+/* store styling ends here */

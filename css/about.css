@@ -1,0 +1,30 @@
+.about-background{
+    background-image: url("../images/about1.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border:1px solid green;
+    background-size: cover;
+}
+
+.about-heading{
+    color:rgb(220, 4, 42);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-paragraph1,.about-paragraph2,.about-paragraph3{
+    font-size: 18px;
+    line-height: 27px;
+    color:#383838;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    border:1px solid green;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+]
