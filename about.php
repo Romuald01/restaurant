@@ -2,7 +2,7 @@
 include"includes/header.php";
 ?>
 <div class="row">
-    <div class="about-background">
+    <div class="header-background">
 
     </div>
 </div>

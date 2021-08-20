@@ -1,17 +1,13 @@
+
+
 *,*::before,*::after{
     padding: 0px;
     margin: 0px;
 }
-    body {
-        font-family: Ubuntu,sans-serif;
-        font-size: 18px;
-        line-height: 1.5;
-        background-image: -webkit-linear-gradient(top,hsla(0,0%,100%,.527),hsla(0,0%,100%,.527)),url(/images/background-cover.jpg);
-        background-image: linear-gradient(180deg,hsla(0,0%,100%,.527),hsla(0,0%,100%,.527)),url(/images/background-cover.jpg);
-    /* background-image: url("../images/background-cover.jpg"); */
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    }
+
+body{
+    font-family: 'Ubuntu', sans-serif !important;
+}
 
 /* header styling start*/
 .collapse{
@@ -19,16 +15,10 @@
     right:0%!important;
 }
 .nav-bg{
-    padding: 10px 100px;
-    background: #dc042a !important;
-    position: fixed;
-    top:0;
-    left:0%;
-    right: 0%;
-    z-index:999;
-    height: 100px;
+    background-color: #dc042a !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
-
 .nav-item{
     padding: 6px;
 }
@@ -45,6 +35,7 @@
 }
 .signup-link{
     color: rgb(220, 4, 42) !important;
+    /* padding: 4px !important; */
 }
 
 
@@ -106,6 +97,9 @@ select{
     border-radius: 3px;
     line-height: 27px;
     font-family: Ubuntu,sans-serif;
+}
+select:focus{
+    outline-color: #dc042a;
 }
 
 /* styling of order input end */
@@ -200,7 +194,6 @@ footer{
 }
 
 /* ===================MEDIA QUERIES START HERE=================== */
-
 @media screen and (max-width:991px){
     button:focus{
         outline: none !important;
@@ -222,21 +215,12 @@ footer{
     .app-store-img{
         height: 30px;
     }
-    .copyright{
+    /* .copyright{
         text-align: center;
-    }
-}
-
-
-@media screen and (max-width:768px){
-  
+    } */
 }
 
 @media screen and (max-width:767px){
-    .navbar{
-
-        flex-direction: row !important;
-    }
     .ordering-heading-main,.ordering-heading-sub{
         font-size: 36px;
     }
@@ -267,6 +251,9 @@ footer span{
 
 
 @media  screen and (max-width:425px) {
+    .restaurant-logo{
+        height: 37px;
+    }
     select{
         width: 200px;
     }
@@ -286,6 +273,92 @@ footer span{
 
 }
 
+/* career us styling start here*/
+.career-heading-text{
+    color: #dc042a;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.career-paragraph{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color:#383838;
+    line-height: 1.5;
+}
+.mail-link{
+    display: block;
+}
+
+.testimonial-div{
+    border:1px solid #dc042a;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffe6ea;
+    height: 100px;
+    border-radius: 5px;
+    padding:10px;
+}
+.testimony-text{
+    padding-top: 5px;
+    padding-left: 10px;
+     color:#383838;
+     font-size: 15px;
+}
+.testimonier{
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.training-heading{
+    color: #dc042a;
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.training-Dev-first-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin-bottom: 20px;
+text-align: left;
+}
+.training-Dev-second-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: left;
+}
+@media screen and (max-width:425px){
+    .career-paragraph,.training-Dev-first-text,.training-Dev-second-text{
+        font-size: 15px;
+    }
+}
+/* career us styling end here */
 /* ===================MEDIA QUERIES START HERE=================== */
 
+
+/* login and signin styling start here*/
+.signin-and-login-form{
+    margin-top: 7%;
+}
+    .signin-heading{
+        color:#dc042a;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 600;
+    }
+    .signin-greeting{
+        color:#7f7f7f;
+        font-size: 16px;
+        line-height: 27px;
+        font-weight: 400;
+
+    }
+   
+
+
+/* login and signin styling end here */
+/* ===================MEDIA QUERIES START HERE=================== */
 

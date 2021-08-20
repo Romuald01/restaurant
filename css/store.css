@@ -1,16 +1,17 @@
 /* store styling start here */
-.store-background{
-    background-image: url("../images/store-location.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    width: 100%;
-    height: 90vh;
-    object-fit: cover;
-    display: block;
-    
-}
 
+.where-to-find-div{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5%;
+    text-align: center;
+}
+.where-to-find-heading{
+    font-size: 36px;
+    color:#dc042a;
+
+}
 .location-div{
     display: flex;
     flex-direction: column;
@@ -36,6 +37,7 @@
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    flex:wrap;
 }
 
 .view-location-button{
@@ -85,9 +87,7 @@
     transition: transform .4s;
     transition: transform .4s,-webkit-transform .4s;
 }
-.view-location-button:hover{
-  
-}
+
 .location-name{
     color: #383838;
     font-weight: 600;
@@ -107,7 +107,7 @@
 
 .store-form input{
     width: 100%;
-    padding: 6px;
+    padding: 4px;
    
 }
 .store-form input[type="text"],input[type="email"]{
@@ -179,7 +179,7 @@ font-weight: 600;
 }
 .day-and-time .time{
     margin-left: 10px;
-    padding-left: 30px;
+    padding-left: 10px;
 }
 .number-link,.mail-link,.number-link .mail-link:link,.number-link .mail-link:visited{
     color:#383838;  
@@ -194,3 +194,59 @@ font-weight: 600;
     padding: 10px;
 }
 /* store styling ends here */
+
+/* store-media query start here */
+@media screen and (max-width:1024px){
+ .leave-message-heading, .service-hours{
+font-size: 29px;
+}   
+}
+
+@media screen and (max-width:844px){
+.vertical-line-div{
+    display: none;
+}
+.schedule-content{
+        margin-top: 10%;
+}
+.where-to-find-heading{
+    font-size: 28px;
+}
+}
+   
+@media screen and (max-width:767px){
+.view-location-button{
+    padding: 5px 5px;
+}
+}
+
+
+@media screen and (max-width:450px){
+    .day-and-time .time{
+        padding-left:15px;
+    }
+    .head-office-sub{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:450px){
+    .head-office-main{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    .leave-message-heading, .service-hours{
+   font-size: 29px;
+   }   
+   .head-office-sub{
+    font-size: 14px;
+}
+}
+
+
+
+
+
+/* store-media query end here */
