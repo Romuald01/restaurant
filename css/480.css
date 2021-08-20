@@ -1,0 +1,297 @@
+
+/* =============================480px start here==================================== */
+@media only screen and (max-width:480px){
+        .company-logo{
+            width: 80px;
+            height: 30px;
+            padding: 10px;
+        }
+        header{
+            position: relative;
+            font-family: "Raleway";
+            }
+        .header nav{
+            position: absolute;
+            margin-right: 0;
+
+        }
+    .illustration-img{
+        margin-top: 10%;
+        width: 200px;
+        height: 200px;
+    }
+   
+        
+        nav{
+           position: absolute;
+            right: 0;    
+            top: 10%; 
+        } 
+        ul li{
+            list-style-type: none;
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 10px;
+            color: hsl(05,0%,100%);
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+    .secondrow-content{
+        width: 100%;
+        margin: auto;
+        height: 200px;
+    }
+    .desktop-curvy{
+        background-image:url("../images/mobile image/bg-curvy-mobile.svg");
+        background-repeat:no-repeat;
+        height: 30rem; 
+    text-align: center;
+        color: hsl(05,0%,100%);
+        position: absolute;
+        bottom:20%;
+        top: 50%;
+    
+        }
+        .desktop-curvy-content{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 10%;
+        }
+        .desktop-curvy-content h1{
+    font-size: 22px;
+    padding: 18px;
+    
+            
+        }
+        .desktop-curvy-content p{
+            padding:20px;
+        }
+        .desktop-curvy-content button{
+            padding: 10px 60px;
+            background-color:hsl(198, 60%, 50%);
+            border-radius:20px;
+            border:none;
+            color: hsl(05,0%,100%);
+            text-transform: capitalize;
+        margin-bottom: 10%;
+        }
+    
+            .features{
+                margin-top:30rem
+            }
+            /* ,.features-iconstwo */
+        .features-icons{  
+            width:100%;
+            height: 300px;
+        color: hsl(05,0%,100%);
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 5%;
+            } 
+            .features-icons img,.features-iconstwo img{
+                margin-bottom: 5%;
+            }
+            .features-icons{
+                margin-bottom: 100%;
+            }
+            .features-iconstwo{
+                margin-top: 20%;
+            }
+           .features-iconstwo .first-icons{
+            margin-top: -2%;
+            font-size: 12px;
+            }
+            .first-icon{
+    margin-top: 60%;
+            }
+    
+    
+    .productive-img img{
+        width: 80%;
+        height: 300px;
+        margin-top:4rem;
+    }
+    
+        .productive-div{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .testimony-container{
+            width:100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            background-image: url(images/bg-quotes.png);
+            background-repeat: no-repeat;
+           color:hsl(05,0%,100%);
+           margin-top: 80%;
+           margin-bottom: 60%;
+           /* position: relative; */
+        }
+        .quote{
+            position: absolute;
+            z-index: 1;
+            margin-top: 2%;
+        }
+        .item{
+            width: 17rem;
+            height: 200px;
+            background-color: hsla(219, 30%, 18%,1.0);
+            /* margin: 0px 10% 10% 7%; */
+            }
+            .item p{
+                padding: 3px;
+            }
+            
+    .container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 5%;
+    }
+    .container img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius:50%;
+        margin-left:-5%;
+        margin-top: -9%;
+    }
+    .itemone{
+        width: 100px;
+        height: 100px;
+        font-weight: bolder;
+        margin: 2px;
+    }
+    .itemtwo p{
+        position: absolute;
+        width: 200px;
+        height: 80px;
+        top: -4%;
+    
+    }
+    
+        .early-access-form{
+            width: 100%;
+            height:15rem;
+         display: flex;
+         justify-content: center;
+         position: relative;
+         z-index: 1;
+        }
+        .form-box{
+            width: 100%;
+            height: 20rem;
+            background-color: hsl(218, 28%, 13%);
+            color: hsl(0, 0%, 100%);
+            position: absolute;
+            top: 9rem;
+            box-shadow:hsla(217, 28%, 15%,0.9);
+            z-index: 1;
+            /* margin-top: 10%; */
+            
+        }
+        .form-box p{
+            font-size: 14px;
+            padding: 20px;
+        }
+        .form-box .email{
+            width: 70%;
+          
+        }
+        .form-box .email,.form-box .submit{
+            border-radius: 20px;
+            border: none;
+            padding:10px;
+            margin: 10px;
+        }
+        .form-box .submit{
+            width: 75%;
+        background-color: hsl(198, 60%, 50%);
+        /* text-align: center; */
+        color:hsl(0, 0%, 100%);
+        
+        }
+        .form-box h3{
+            display: none;
+            font-family: "Raleway";
+        }
+        .footer-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+          width: 90%;
+          height:70rem;
+          background-color: hsl(216, 53%, 9%);
+    
+        
+      }
+        .footer-company-logo{
+            width: 200px;
+            margin-left: 10%;
+            margin-top: 50%;
+        } 
+        .footer-contents{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            margin-top: 8%;
+            width: 100%;
+        justify-content: content; 
+        margin-top: 40%;
+    }
+    
+    .footer-items-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-top: 120%;
+        margin-left: 5%;
+        }
+        .item1{
+            width: 100%;
+            color: hsl(0, 0%, 100%);
+        }
+        .address-item{
+            display: flex;
+        color: hsl(0, 0%, 100%);
+        flex-direction: row;
+        }
+        .about-company{
+            display: flex;
+            flex-direction: column;
+            width:300px;
+            margin-left:-13%;
+         
+        
+        }
+        .about-us{
+             width:150px;
+             height: 200px;
+            /* padding: none !important; */
+        }
+        .about-us  li a{
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .item1 .social-media{
+            text-align: center;
+            padding: 5px;
+            margin-top:20%;
+            margin-left: 10%;
+            
+        }
+      
+    
+    
+}  /* =============================480px start ends here==================================== */
