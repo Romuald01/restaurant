@@ -1,93 +1,4 @@
 
-.signin-form input[type="email"]{
-    padding:2px;
-    width:100%;
-    font-size: 16px;
-    border-radius: 3px;
-    border: 1px solid #000; 
-}
-.signin-form input[type="email"],input[type="text"]:focus{
-    outline-color: #dc042a;
-}
-.signin-form label{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color:#212529;
-    width: 100%;
-    padding: 5px;
-}
-.input-group{
-    width: 60% !important;
-}
-.input-container input,.create-accpsw input{
-    padding:2px;
-    width:100%;
-    border:0;
-    font-size: 16px;
-    border-radius: 3px;
-    color:red;
-}
-
-.input-container input[type="password"]:focus,input[type="password"]:focus,input[type="number"]:focus{
-        outline-color: #dc042a;
-       
-}
-
-.input-container,.create-accpsw{
-    width: 100%;
-    display:flex;
-    align-items: center;
-    border: 1px solid #aaa; 
-    border-radius: 3px;
-}
-i{
-    margin: 0 10px;
-    color:#dc042a;
-    cursor: default;
-    position: absolute;
-    right: 3%;
-}
-.create-account-form input[type="text"],input[type="number"]{
-    width: 100%;
-    padding:2px;
-
-}
-.or-sign-with-text{
-    color:#212529;;
-    display: block;
-}
-.or-box{
-    display: flex;
-    justify-content: center;
-    margin-top: 6%;
-}
-.or-line{
-    border-left: 2px solid #dc042a;
-    height: 330px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-.circle{
-    height:30px;
-    width: 30px;
-    border: 2px solid #dc042a;
-    border-radius: 50%;
-    position:absolute;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.circle span{
-    color: #dc042a;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
 .btn{
     display: -webkit-flex !important;
     display: flex !important;
@@ -257,6 +168,11 @@ body{
     background-color: #dc042a !important;
     padding-top: 3px !important;
     padding-bottom: 3px !important;
+    
+}
+.space-around{
+    display: flex !important;
+    justify-content: space-around !important;
 }
 .nav-item{
     padding: 6px;
@@ -584,8 +500,107 @@ text-align: left;
 
 
 /* login and signin styling start here*/
+.signin-form input[type="email"]{
+    padding:2px;
+    width:100%;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #000; 
+}
+.signin-form input[type="email"],input[type="text"]:focus{
+    outline-color: #dc042a;
+}
+.signin-form label{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color:#212529;
+    width: 100%;
+    padding: 5px;
+}
+.input-group{
+    width: 60% !important;
+}
+.input-container input,.create-accpsw input{
+    padding:2px;
+    width:100%;
+    border:0;
+    font-size: 16px;
+    border-radius: 3px;
+    color:#000;
+
+}
+
+.create-account-form input[type="text"],.create-account-form  input[type="number"]{
+    border-radius: 3px;
+}
+.input-container input[type="password"]:focus,input[type="password"]:focus,input[type="number"]:focus{
+        outline-color: #dc042a;
+       
+}
+
+.input-container,.create-accpsw{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    border: 1px solid #aaa; 
+    border-radius: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+i{
+    margin: 0 10px;
+    color:#dc042a;
+    cursor: default;
+    position: absolute;
+    right: 3%;
+}
+.create-account-form input[type="text"],input[type="number"]{
+    width: 100%;
+    padding:2px;
+
+}
+.or-sign-with-text{
+    color:#212529;;
+    display: block;
+}
+.or-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+.or-line{
+    border-left: 2px solid #dc042a;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.circle{
+    height:30px;
+    width: 30px;
+    border: 2px solid #dc042a;
+    border-radius: 50%;
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle span{
+    color: #dc042a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
 .signin-and-login-form{
-    margin-top: 7%;
+    margin-top: 13%;
 }
     .signin-heading{
         color:#dc042a;
@@ -600,6 +615,43 @@ text-align: left;
         font-weight: 400;
 
     }
+
+    @media screen and (max-width:991px){
+            .signin-and-login-form{
+                margin-top: 20%;
+            }
+            .ordering-heading-contents{
+                margin-top: 20%;
+            }
+    }
+    @media screen and (max-width:767px){
+        .or-box{
+            display: none;
+        }
+        .register-form{
+            margin-top: 5%;
+        }
+    }
+    @media only screen and  (max-width: 576px){
+.signin-heading {
+    font-size: 30px;
+} 
+.header-background,.career-background,.about-background{
+        height: 50vh;
+}
+  footer{
+            margin-top: 0;
+}
+}
+@media screen and (max-width:425px){
+    .signin-and-login-form{
+        margin-top: 30%;
+    }
+    .ordering-heading-contents{
+        margin-top: 30%;
+    }
+  
+}
    
 
 

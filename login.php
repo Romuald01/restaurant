@@ -19,10 +19,10 @@
                         </span>
                     </div>
                     <div>
-                        <a href="forgetpsw.php" class="change-psw-link">forget password?</a>
+                        <a href="#" class="change-psw-link">forget password?</a>
                     </div>
                 </div>   
-                <button type="submit" name="login" class="btn btn-login"><span class="text">Login</span>
+                <button type="submit" name="login" class="btn my-3 btn-login"><span class="text">Login</span>
                 </button> 
                 <span class="or-sign-with-text">Or sign in with</span>
                 <div class="other-social">
@@ -48,7 +48,7 @@
                 </div>
         </div>
         <div class="col-md-5">
-            <h3 class="signin-heading">Create an Account</h3>
+            <h3 class="signin-heading">Create New Account</h3>
             <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
             <form action="#" method="post" class="signin-form create-account-form">
                 <label for="firstname">First Name</label>
@@ -64,9 +64,8 @@
                     <input type="password" placeholder="Password" name="password" required>
                     <i class="material-icons visibility">visibility_off</i>
                 </div>
-              
-                <!-- <button type="submit" name="login" class="login-button">Login</button>  -->
-                <span class="or-sign-with-text">Or sign in with</span>
+                <button type="submit" name="login" class="btn my-3 btn-login"><span class="text">Login</span></button>
+                <span class="or-sign-with-text my-2 d-block">Or sign in with</span>
                 <div class="other-social">
                     <div class="">
                            <button class="facebook-logo-button">

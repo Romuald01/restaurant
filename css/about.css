@@ -5,6 +5,7 @@
     object-fit: cover;
     width: 100%;
     background-size: cover;
+    background-position: 50%;
 }
 .career-background{
     background-image: url("../images/career_background-img.jpg");
@@ -13,6 +14,7 @@
     object-fit: cover;
     width: 100%;
     background-size: cover;
+    background-position: 50%;
 }
 .contact-background{
     background-image: url("../images/Contactus_background-img.jpg");
@@ -21,9 +23,7 @@
     object-fit: cover;
     width: 100%;
     background-size: cover;
-}
-.contact-background{
-    background-image: url("../images/Contactus_background-img.jpg");
+    background-position: 50%;
 }
 .about-heading{
     color:rgb(220, 4, 42);
@@ -42,5 +42,3 @@
     /* justify-content: center; */
     align-items: center;
 }
-
-]
