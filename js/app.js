@@ -1,6 +1,7 @@
 const visibilityToggle = document.querySelector('.visibility');
-
+// const createAccvisibilityToggle = document.querySelector('.visibility');
 const input = document.querySelector('.input-container input');
+// const createAccInput = document.querySelector('.create-accpsw input');
 var password = true;
 
 visibilityToggle.addEventListener('click', function(){
@@ -13,3 +14,17 @@ visibilityToggle.addEventListener('click', function(){
     }
     password = !password;
 });
+
+createAccvisibilityToggle.addEventListener('click', function(){
+    if(password){
+        createAccInput.setAttribute('type','text');
+        visibilityToggle.innerHTML = 'visibility';
+    }else{
+        input.setAttribute('type','password');
+        createAccvisibilityToggle.innerHTML = 'visibility_off';
+    }
+    password = !password;
+});
+
+
+

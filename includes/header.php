@@ -15,37 +15,34 @@
     <title>Restaurant</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row nav-bg">
-            <div class="container">
-                <nav class="navbar row navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="restaurant-logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-togglext-white"><img src="images/icon-hamburger.svg" alt="hamburger-icon"></span>
-                    </button>
-                
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="index.php">Order Now</a>
-                            </li>
-                            <li class="nav-item">   
-                            <a class="nav-link" href="about.php">About</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="store-location.php">Store Locations</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="career.php">Career</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="cart.php">Cart</a>
-                            </li>
-                            <li class="nav-item signup-box">
-                            <a class="nav-link signup-link" href="login.php">Signup/Login</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <nav class="navbar fixed-top navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="restaurant-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-togglext-white"><img src="images/icon-hamburger.svg" alt="hamburger-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.php">Order Now</a>
+                    </li>
+                    <li class="nav-item">   
+                    <a class="nav-link" href="about.php">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="store-location.php">Store Locations</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="career.php">Career</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="cart.php">Cart</a>
+                    </li>
+                    <li class="nav-item signup-box">
+                    <a class="nav-link signup-link" href="login.php">Signup/Login</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </header>
+    <div class="container-fluid">

@@ -1,48 +1,12 @@
 
-
-/*login,signin form password toggling  styling start here*/
-
-.btn{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    position: relative;
-    border: 2px solid #dc042a;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    background-color: #dc042a;
-    cursor: pointer;
-}
-.btn::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    -webkit-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: -webkit-transform .4s;
-    transition: -webkit-transform .4s;
-    transition: transform .4s;
-    transition: transform .4s,-webkit-transform .4s;
-}
-
 .signin-form input[type="email"]{
-    padding:4px;
+    padding:2px;
     width:100%;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #000; 
 }
-.signin-form input[type="email"]:focus{
+.signin-form input[type="email"],input[type="text"]:focus{
     outline-color: #dc042a;
 }
 .signin-form label{
@@ -56,24 +20,37 @@
 .input-group{
     width: 60% !important;
 }
-.input-container input[type="password"]{
-    padding:4px;
+.input-container input,.create-accpsw input{
+    padding:2px;
     width:100%;
-   border:0;
+    border:0;
     font-size: 16px;
-    outline: none;
     border-radius: 3px;
+    color:red;
 }
-.input-container{
+
+.input-container input[type="password"]:focus,input[type="password"]:focus,input[type="number"]:focus{
+        outline-color: #dc042a;
+       
+}
+
+.input-container,.create-accpsw{
     width: 100%;
-      display:flex;
+    display:flex;
     align-items: center;
     border: 1px solid #aaa; 
     border-radius: 3px;
 }
+i{
+    margin: 0 10px;
+    color:#dc042a;
+    cursor: default;
+    position: absolute;
+    right: 3%;
+}
 .create-account-form input[type="text"],input[type="number"]{
     width: 100%;
-    padding:4px;
+    padding:2px;
 
 }
 .or-sign-with-text{
@@ -83,16 +60,34 @@
 .or-box{
     display: flex;
     justify-content: center;
+    margin-top: 6%;
 }
 .or-line{
-    border-left: 1px solid #dc042a;
-    height: 200px;
+    border-left: 2px solid #dc042a;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-i{
-    margin: 0 10px;
-    color:#dc042a;
-    cursor: default;
+.circle{
+    height:30px;
+    width: 30px;
+    border: 2px solid #dc042a;
+    border-radius: 50%;
+    position:absolute;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.circle span{
+    color: #dc042a;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
 .btn{
     display: -webkit-flex !important;
     display: flex !important;
@@ -126,7 +121,6 @@ i{
     transition: transform .4s,-webkit-transform .4s !important;
 
 }
-
 .btn>.text{
     position: relative;
     color: #fff;
@@ -142,8 +136,10 @@ i{
     -webkit-transition: background-position .4s;
     transition: background-position .4s;
 }
-
-  
+.btn:hover {
+    color: rgb(33, 37, 41) !important;
+    text-decoration: none !important;
+}
 
 .other-social{
     display: flex;
@@ -257,10 +253,10 @@ body{
     position: absolute;
     right:0%!important;
 }
-.nav-bg{
+.fixed-top{
     background-color: #dc042a !important;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
 }
 .nav-item{
     padding: 6px;
@@ -577,6 +573,11 @@ text-align: left;
     .career-paragraph,.training-Dev-first-text,.training-Dev-second-text{
         font-size: 15px;
     }
+}
+@media screen and (max-width:320px){
+        .restaurant-logo{
+            height: 30px;
+        }
 }
 /* career us styling end here */
 /* ===================MEDIA QUERIES START HERE=================== */

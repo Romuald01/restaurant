@@ -42,11 +42,13 @@
     
         <div class="col-md-2 or-box">
                 <div class="or-line">
-
+                        <div class="circle">
+                                <span class="or-text">Or</span>
+                        </div>
                 </div>
         </div>
         <div class="col-md-5">
-        <h3 class="signin-heading">Create an Account</h3>
+            <h3 class="signin-heading">Create an Account</h3>
             <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
             <form action="#" method="post" class="signin-form create-account-form">
                 <label for="firstname">First Name</label>
@@ -58,10 +60,11 @@
                 <label for="email">Email Address</label>
                 <input type="email" placeholder="Example@gmail.com" name="email" required>
                 <label for="">password</label>
-                <div class="input-container">
-                    <input type="password" placeholder="Password*" name="password" required>
+                <div class="create-accpsw">
+                    <input type="password" placeholder="Password" name="password" required>
                     <i class="material-icons visibility">visibility_off</i>
                 </div>
+              
                 <!-- <button type="submit" name="login" class="login-button">Login</button>  -->
                 <span class="or-sign-with-text">Or sign in with</span>
                 <div class="other-social">
