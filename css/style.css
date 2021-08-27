@@ -1,4 +1,90 @@
 
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+
+.first-slide-images .d-block{
+    width: 100%;
+    display: block !important;
+    height: 200px;
+    display: flex !important;
+    object-fit: cover;
+}
+
+.first-slide-images{
+    display: flex !important;
+    flex-direction: row !important;
+object-fit: cover;
+}
+.same-width-img-box{
+    border: 1px solid yellow;
+    display: flex !important;
+    flex-direction: row !important;
+}
+.small-width-box{
+    height: 200px;
+    width: 12.5%;
+}
+.small-width-box img{
+margin: 5px;
+display: block;
+width: 100%;
+object-fit: cover;
+
+}
+.same-width-img-box{
+    width: 75%;
+ display: flex;
+ justify-content: center;
+    height: 200px;
+    display: block;
+    
+}
+.same-width-img{
+    width: 270px;
+}
+.same-width-img img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+  
+}
+/* 
 .btn{
     display: -webkit-flex !important;
     display: flex !important;
@@ -50,7 +136,7 @@
 .btn:hover {
     color: rgb(33, 37, 41) !important;
     text-decoration: none !important;
-}
+} */
 
 .other-social{
     display: flex;
@@ -160,9 +246,12 @@ body{
     font-family: 'Ubuntu', sans-serif !important;
 }
 /*login,signin form password toggling  styling end here*/
-.collapse{
+.navbar-brand{
+    margin-left: 8% !important;
+}
+nav .collapse{
     position: absolute;
-    right:0%!important;
+    right:8%!important;
 }
 .fixed-top{
     background-color: #dc042a !important;
@@ -251,10 +340,25 @@ select{
     border-radius: 3px;
     line-height: 27px;
     font-family: Ubuntu,sans-serif;
+  
 }
 select:focus{
     outline-color: #dc042a;
 }
+
+select option{
+    color:#dc042a;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.center-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
 /* styling of order input end */
 /* styling of how it works start */
@@ -342,6 +446,15 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10%;
+}
+footer span a{
+    color:#fff;
+    padding: 5px;
+}
+
+footer span a:hover{
+    color:#fff;
+    text-decoration: none;
 }
 .social-media-div a{
     padding: 10px;

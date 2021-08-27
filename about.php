@@ -20,10 +20,41 @@ include"includes/header.php";
                 We are working to ensure there is a Kilimanjaro restaurant in every major city in the country.
                 </p>
             </div>
-          
     </div>
-    <div>
-        <!-- animation to be added -->
+    <div class="row mt-3 ">
+       <div class="col-md-12 first-slide-image-box">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row first-slide-images">
+                                <div class="small-width-box">    
+                                    <img class="d-block img-flud" src="images/about-img-1.jpg" alt="First slide">
+                                </div>
+                                <div class="same-width-img-box">
+                                    <div class="same-width-img">    
+                                        <img class="d-block img-fluid" src="images/about-img-1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="same-width-img">    
+                                        <img class="d-block img-fluid" src="images/about-img-1.jpg" alt="First slide">
+                                    </div>
+                                    <div class="same-width-img">    
+                                        <img class="d-block img-fluid" src="images/about-img-1.jpg" alt="First slide">
+                                    </div>
+                                </div>
+                                <div class="small-width-box">    
+                                    <img class="d-block img-flud" src="images/about-img-1.jpg" alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block" src="images/about-img-1.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block" src="images/about-img-1.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+        </div>
     </div>
 </div>
 

@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconfont/material-icons.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/store.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Restaurant</title>
 </head>
@@ -43,6 +45,8 @@
                     </li>
                 </ul>
             </div>
+            <div class="d-none nav-item nav-bg-white account-toggle show"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Romuald</a><div class="dropdown-menu show"><a class="dropdown-item" href="/account">My Account</a><a class="dropdown-item">Log out</a></div></div>
+
         </nav>
     </header>
     <div class="container-fluid">

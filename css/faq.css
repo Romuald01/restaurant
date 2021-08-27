@@ -1,0 +1,62 @@
+/* faq styling satrt here */
+.faq-background{
+    background-image: url("../images/faq-background.jpg");
+    background-repeat: no-repeat;
+    height: 60vh;
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+.faq-heading{
+    color:#dc042a;
+    text-align: center;
+    margin: 30px auto;
+}
+.faq-content{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dc042a;
+}
+.collapse-icon{
+    padding-left: 10px;
+    border: 1px solid green;
+}
+.faq-text{
+    color:#dc042a;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding:16px;
+}
+
+.faq-content button{
+    background-color: #fff;
+    border:0;
+}
+.faq-content button:focus{
+    outline: none !important;
+}
+
+.faq-answer{
+    text-align: left;
+    padding: 8px 16px 6px;
+    background: #ffe6ea !important;
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    border: 0 !important;
+    border-radius:none !important;
+}
+.faq-content .card{
+    border: 0 !important;
+    border-radius:none !important;
+}
+
+/* faq styling end*/

@@ -1,4 +1,9 @@
-<?php include("includes/header.php")?>
+<?php 
+// session_start();
+// $_SESSION();
+include("includes/header.php")
+
+?>
 <div class="container">
     <div class="row signin-and-login-form">
         <div class="col-md-5">
@@ -26,7 +31,8 @@
                 </button> 
                 <span class="or-sign-with-text">Or sign in with</span>
                 <div class="other-social">
-                    <div class="">
+                
+                <div class="">
                            <button class="facebook-logo-button">
                                <i class="fab fa-facebook"></i><a href="#">FACEBOOK</a> 
                          </button>
@@ -52,16 +58,16 @@
             <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
             <form action="#" method="post" class="signin-form create-account-form">
                 <label for="firstname">First Name</label>
-                <input type="text" placeholder="First Name*" name="firstname">
+                <input type="text" placeholder="First Name*" name="first_name">
                 <label for="firstname">Last Name</label>
-                <input type="text" placeholder="lastname*" name="lastname">
+                <input type="text" placeholder="lastname*" name="last_name">
                 <label for="firstname">Phone Number</label>
-                <input type="number" placeholder="+2349063514430*" name="phonenumber">
+                <input type="number" placeholder="+2349063514430*" name="phone_number">
                 <label for="email">Email Address</label>
                 <input type="email" placeholder="Example@gmail.com" name="email" required>
                 <label for="">password</label>
-                <div class="create-accpsw">
-                    <input type="password" placeholder="Password" name="password" required>
+                <div class="input-container create-accpsw">
+                    <input type="password" placeholder="Password" name="password" required class="createAccinput">
                     <i class="material-icons visibility">visibility_off</i>
                 </div>
                 <button type="submit" name="login" class="btn my-3 btn-login"><span class="text">Login</span></button>

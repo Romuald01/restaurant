@@ -1,5 +1,4 @@
 <?php include("includes/header.php")?>
-
 <div class="row">
     <div class="career-background">
     </div>
@@ -7,46 +6,47 @@
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-6 career-text-div">
-        <h4 class="career-heading-text">Careers</h4>
-        <p class="career-paragraph"> At Kilimanjaro, we pride ourselves on providing our employees with an enabling environment that inspires career growth and development. Our team of young, smart, and passionate individuals is constantly challenged to deliver exceptional service. We regard this as the “calling to serve” rather than an occupation. We are friends and therefore motivate each other by maintaining a friendly work environment that exudes respect for individual differences and a desire to help each one achieve their personal goals.</p>
+            <h4 class="career-heading-text">Careers</h4>
+            <p class="career-paragraph"> At Kilimanjaro, we pride ourselves on providing our employees with an enabling environment that inspires career growth and development. Our team of young, smart, and passionate individuals is constantly challenged to deliver exceptional service. We regard this as the “calling to serve” rather than an occupation. We are friends and therefore motivate each other by maintaining a friendly work environment that exudes respect for individual differences and a desire to help each one achieve their personal goals.</p>
         </div>
         <div class="col-md-6 career-carousel-div">
             <h4 class="career-heading-text">Testimonials</h4>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="testimonial-div">
-                        <div>
-                            <p class="testimony-text">
-                                Thanks for kilimanjo meal,i love every bit of it.
-                            </p>
-                        </div>
-                        <div class="text-right">
-                            <span class="testimonier">-Romuald</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="testimonial-div">
-                        <div>
-                            <p class="testimony-text">
-                            it is a nice place to eat good and tasty food.
-                            </p>
-                        </div>
-                        <div class="text-right">
-                            <span class="testimonier">-Mr Habeeb Amode</span>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-div">
+                            <div>
+                                <p class="testimony-text">
+                                    Thanks for kilimanjo meal,i love every bit of it.
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <span class="testimonier">-Romuald</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="testimonial-div">
-                        <div>
-                            <p class="testimony-text">
-                                Thanks for kilimanjo meal,i love every bit of it.
-                            </p>
+                    <div class="carousel-item">
+                        <div class="testimonial-div">
+                            <div>
+                                <p class="testimony-text">
+                                it is a nice place to eat good and tasty food.
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <span class="testimonier">-Mr Habeeb Amode</span>
+                            </div>
                         </div>
-                        <div class="text-right">
-                            <span class="testimonier">-Mr Font</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-div">
+                            <div>
+                                <p class="testimony-text">
+                                    Thanks for kilimanjo meal,i love every bit of it.
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <span class="testimonier">-Mr Font</span>
+                            </div>
                         </div>
                     </div>
                 </div>
