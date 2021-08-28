@@ -736,6 +736,9 @@ i{
             .ordering-heading-contents{
                 margin-top: 20%;
             }
+            .navbar-brand{
+                margin-left: 2% !important;
+            }
     }
     @media screen and (max-width:767px){
         .or-box{
@@ -743,6 +746,13 @@ i{
         }
         .register-form{
             margin-top: 5%;
+        }
+        .appstore-images-link{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
         }
     }
     @media only screen and  (max-width: 576px){
@@ -763,8 +773,12 @@ i{
     .ordering-heading-contents{
         margin-top: 30%;
     }
+    .navbar-brand{
+        margin-left: 4% !important;
+    }
   
 }
+
    
 
 

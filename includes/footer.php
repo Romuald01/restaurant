@@ -2,8 +2,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="faq"><a href="faq.php">FAQS</a></span>
-                    <span class="term-and-condition"><a href="terms.php">Terms & Conditions</a></span>
+                    <span class="faq"><a href="faqs.php">FAQS</a></span>
+                    <span class="term-and-condition"><a href="tandc.php">Terms & Conditions</a></span>
                 </div>
                 <div class="col-md-4">
                     <div class="copyright">© 2021 Kilimanjaro Restaurants</div>

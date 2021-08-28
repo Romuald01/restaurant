@@ -1,0 +1,43 @@
+.tandc-heading{
+    text-align: center;
+    color: #dc042a;
+    margin: 20px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+.term-paragraph{
+    color: #7f7f7f;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+}
+.section-number{
+    color:#383838;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+}
+.section-paragraph{
+    color: #7f7f7f;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+.kilimanjaro-link{
+    color:#dc042a;
+}
+.kilimanjaro-link:hover{
+    color:#dc042a;
+    text-decoration: none;
+}
+@media screen and (max-width:576px){
+    .section-paragraph{
+        font-size: 15px;
+    }
+}

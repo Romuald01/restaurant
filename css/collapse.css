@@ -1,45 +1,113 @@
-.card-header{
-    margin-top:20% !important;
+
+    
+    /* styling of FAQs start here */
+.faq-container{
+    margin-top: 5%;
 }
-button{
-        display:flex !important;
-        justify-content: space-between !important;
-        border:1px solid #dc042a !important;
-        width: 100%;
-        background-color: #fff;
-        align-items: center;
-        padding:10px;
-    }
-    button:focus{
-        border:1px solid #dc042a !important;
-    }
-    .card{
-        border:0;
-        border-radius: none;
-    }
-    .faq-text{
-        color:#dc042a;
+.faqs-heading{
+color:#dc042a;
+font-size: 30px;
+
+}
+.faqs-text{
+    border: 1px solid green;
+    width: 100%;
+}
+#accordion .card {
+    border: none  !important;
+    background: none !important;
+ }
+  
+  #accordion .card-header {
+    background: none !important;
+  }
+  .button {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      color: hsl(229, 31%, 21%);
+      font-size: 14px;
+      padding: 0; 
+      border: 1px solid #dc042a;
+      border-radius:3px !important;
+    } 
+   
+    .btn-link{
+        color: #000;
         font-size: 17px;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
         display: flex;
         align-items: center;
         padding:16px;
+        
     }
-    .caret:focus{
-        transform: rotate(360deg);
-        transition: all 2s;
-    }
-    .faq-answer{
-        text-align: left;
-        padding: 8px 16px 6px;
-        background: #ffe6ea !important;
-        font-size: 14px;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.00938em;
+
+    .btn:focus{
         border: 0 !important;
-        border-radius:none !important;
-        margin-top:20px;
+        outline-color:yellow !important;
+        outline: none !important;
     }
+    .card-body{
+    font-size: 14px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    text-align:left;
+    padding: 8px 16px 6px;
+    background: #ffe6ea;
+    margin-top: 15px
+    }
+    .card-header{
+        border-bottom:none;
+    }
+  .btn-link{
+    color: #383838 !important;
+    font-size: 15px !important;
+    font-weight: 700;
+  }
+
+      .btn-link:hover{
+          color: #000;
+        text-decoration: none !important;
+
+      }
+      button:focus{
+          outline: none !important;
+      }
+
+      .faq-info{
+          background-color:hsl(231, 69%, 60%);
+          border: none;
+          padding: 10px 12px;
+          border-radius: 2px;
+      }
+      .more-info-text{
+          color: #fff;
+      }
+      @media screen and (max-width:991px){
+        .faqs-heading{
+          
+            margin-top:5% ;
+        }
+        }
+
+      @media screen and (max-width:576px){
+          .btn-link{
+              font-size: 12px;
+          }
+      }
+      @media screen and (max-width:768px){
+       .faq-container .mx-auto{
+                margin-left: none;
+                margin-right: none;
+       }
+    }
+    @media screen and (max-width:768px){
+        .faqs-heading{
+            font-size: 25px;
+        }
+        }
+  /* styling of FAQs ends here */
+    
