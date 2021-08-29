@@ -2,7 +2,7 @@
 include"includes/header.php";
 ?>
 <div class="row">
-    <div class="header-background">
+    <div class="store-location-background">
     </div>
 </div>
 <div class="row">

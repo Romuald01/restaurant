@@ -60,10 +60,10 @@ object-fit: cover;
     width: 12.5%;
 }
 .small-width-box img{
-margin: 5px;
 display: block;
 width: 100%;
 object-fit: cover;
+padding: 5px;
 
 }
 .same-width-img-box{
@@ -77,163 +77,38 @@ object-fit: cover;
 .same-width-img{
     width: 270px;
 }
+
 .same-width-img img{
     display: block;
     width: 100%;
     object-fit: cover;
-    padding: 10px;
-  
-}
-/* 
-.btn{
-    display: -webkit-flex !important;
-    display: flex !important;
-    -webkit-justify-content: center !important;
-    justify-content: center !important;
-    -webkit-align-items: center !important;
-    align-items: center !important; 
-    position: relative!important;
-    border: 2px solid #dc042a !important;
-    font-size: 13px !important;
-    text-transform: uppercase!important;
-    padding: 8px 16px !important;
-    background-color: #dc042a !important;
-    cursor: pointer!important;
-}
-.btn::before{
-    content: "" !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    background: #fff !important;
-    -webkit-transform-origin: 100% 0 !important;
-    transform-origin: 100% 0 !important;
-    -webkit-transform: scaleX(0) !important;
-    transform: scaleX(0) !important;
-    -webkit-transition: -webkit-transform .4s !important;
-    transition: -webkit-transform .4s !important;
-    transition: transform .4s !important;
-    transition: transform .4s,-webkit-transform .4s !important;
-
-}
-.btn>.text{
-    position: relative;
-    color: #fff;
-    background-image: -webkit-linear-gradient(left,#dc042a,#dc042a 50%,#fff 0,#fff);
-    background-image: linear-gradient(
-90deg
-,#dc042a,#dc042a 50%,#fff 0,#fff);
-    background-repeat: repeat;
-    background-size: 200%;
-    background-position: 100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-transition: background-position .4s;
-    transition: background-position .4s;
-}
-.btn:hover {
-    color: rgb(33, 37, 41) !important;
-    text-decoration: none !important;
-} */
-
-.other-social{
-    display: flex;
-    align-items: center;
-}
-.facebook{
-    border: none;
-    margin:10px;
-    background:#4c69ba;
-    border: none;
-    border-radius: 3px;
+    padding: 5px;
 }
 
- .facebook-logo-button,.google-logo-button{
-     display: inline;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     /* margin: 10px; */
- }
-.fa-facebook{
-    color: #fff; 
-}.password-sub-content{
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-between;
-    flex:wrap;
+@media screen and (max-width:991px){
+    .same-width-img-box{
+        width:60%;
+    }
+    .small-width-box{
+        width: 20%;
+    }
+    .third-same-width-img{
+        display: none;
+    }
 }
-.change-psw-link{
-    color:#dc042a;
-    display: block;
-    font-size: 15px;
-    line-height: 22.5px;
-    font-weight: 400;
-}
-.remember-text{
-    color:#dc042a;
-    font-size: 15px;
-    line-height: 22.5px;
-    font-weight: 400;
-    padding-left: 5px;
-}
-.change-psw-link:hover{
-    text-decoration: none;
-    color: #000;
-}
-.other-social{
-    margin: 10px;
-}
-.facebook-logo-button{
-    border: none;
-    background-color: #4c69ba;
-    border-radius: 3px;
-    display: inline-flex;
-    padding: 0px;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: Roboto, sans-serif;
-    
-}
-.google-logo-button{
-    background-color: rgb(255, 255, 255);
-    display: inline-flex;
-    align-items: center;
-    color: rgba(0, 0, 0, 0.54);
-    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
-    padding: 0px;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: Roboto, sans-serif;
-    margin-left: 10px;
-
-}
-.facebook-logo-button a{
-    color:#fff;
-    font-weight: 600;
-    font-size: 14px; 
-    padding: 3px;
-   
-}
-.facebook-logo-button a:hover{
-    color:#fff;
-    text-decoration: none;
-}
-.google-logo-button a{
-   color: rgba(0, 0, 0, 0.54);
-   font-weight: 600;
-   font-size: 14px;
-   padding: 3px;
-}
-.google-logo-button a:hover{
-    color: rgba(0, 0, 0, 0.54);
-    text-decoration: none;
+@media screen and (max-width:425px){
+    .same-width-img-box{
+        width: ;
+    }
+    .second-same-width-img{
+        display: none;
+    }
+    /* .small-width-box{
+      width:20%;
+    } */
+    /* .same-width-img img,.small-width-box img{
+        padding: 2px;
+    } */
 }
 
 /* password toggling styling*/
@@ -613,6 +488,104 @@ text-align: left;
 
 
 /* login and signin styling start here*/
+
+.other-social{
+    display: flex;
+    align-items: center;
+}
+.facebook{
+    border: none;
+    margin:10px;
+    background:#4c69ba;
+    border: none;
+    border-radius: 3px;
+}
+
+ .facebook-logo-button,.google-logo-button{
+     display: inline;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     /* margin: 10px; */
+ }
+.fa-facebook{
+    color: #fff; 
+}.password-sub-content{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex:wrap;
+}
+.change-psw-link{
+    color:#dc042a;
+    display: block;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 400;
+}
+.remember-text{
+    color:#dc042a;
+    font-size: 15px;
+    line-height: 22.5px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.change-psw-link:hover{
+    text-decoration: none;
+    color: #000;
+}
+.other-social{
+    margin: 10px;
+}
+.facebook-logo-button{
+    border: none;
+    background-color: #4c69ba;
+    border-radius: 3px;
+    display: inline-flex;
+    padding: 0px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    
+}
+.google-logo-button{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+    padding: 0px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    margin-left: 10px;
+
+}
+.facebook-logo-button a{
+    color:#fff;
+    font-weight: 600;
+    font-size: 14px; 
+    padding: 3px;
+   
+}
+.facebook-logo-button a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+.google-logo-button a{
+   color: rgba(0, 0, 0, 0.54);
+   font-weight: 600;
+   font-size: 14px;
+   padding: 3px;
+}
+.google-logo-button a:hover{
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: none;
+}
 .signin-form input[type="email"]{
     padding:2px;
     width:100%;

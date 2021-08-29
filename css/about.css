@@ -1,12 +1,22 @@
-.header-background{
-    background-image: url("../images/about1.jpg");
+.about-header{
+    background-image: url("../images/about-us-img.jpeg");
     background-repeat: no-repeat;
-    height: 60vh;
-    object-fit: cover;
-    width: 100%;
-    background-size: cover;
+    height: 80vh;
+    background-size: 100%;
     background-position: 50%;
+    display: block;
+    width: 100%;
 }
+.store-location-background{
+    background-image: url("../images/store-location-img.jpg");
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: 100%;
+    background-position: 50%;
+    display: block;
+    width: 100%;
+}
+
 .career-background{
     background-image: url("../images/career_background-img.jpg");
     background-repeat: no-repeat;
@@ -51,4 +61,9 @@
     text-align: center;
     /* justify-content: center; */
     align-items: center;
+}
+@media screen and (max-width:576px){
+   .about-header,.career-background,.tandc-background,.contact-background{
+    height: 74vh;
+   } 
 }
