@@ -17,7 +17,7 @@ include"includes/header.php";
             <div class="col-md-12 input-content">
                     <form action="#" method="#" enctype="multipart/form-data"> 
                             <select name="state" id="" class="first-select">
-                                <option value="Ogun" class="option">Ogun</option>
+                                <option value="Lagos" class="option">Lagos</option>
                                 <option value="Kwara">Kwara</option>
                                 <option value="Osun">Osun</option>
                                 <option value="Ibadan">Ibadan</option>
