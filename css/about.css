@@ -29,13 +29,22 @@
 .contact-background{
     background-image: url("../images/Contactus_background-img.jpg");
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 80vh;
     object-fit: cover;
     width: 100%;
     background-size: cover;
     background-position: 50%;
 }
 .tandc-background{
+    background-image: url("../images/store-location-2.jpg");
+    background-repeat: no-repeat;
+    height: 60vh;
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+}
+.faqs-background{
     background-image: url("../images/store-location-2.jpg");
     background-repeat: no-repeat;
     height: 60vh;
@@ -63,35 +72,60 @@
     align-items: center;
 }
 @media screen and (max-width:768px){
-    .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
+    .about-header,.career-background,.tandc-background,.faqs-background{
      height: 33vh;
     } 
- }
-@media screen and (max-width:375px){
-   .career-background,.tandc-background,.contact-background,.store-location-background{
-    height: 26vh;
-   } 
-   .about-header{
-    height: 26vh;
-   }
+    .store-location-background{
+        height: 42vh;
+    }
+    .contact-background{
+        height: 43vh;
 }
-@media screen and (max-width:414px){
-    .career-background,.tandc-background,.contact-background,.store-location-background{
-     height: 26vh;
-    } 
+ }
+ @media screen and (max-width:414px){
     .about-header{
         height: 31vh;
        }
+       .store-location-background{
+        height:31vh; 
+       }
+       .career-background{
+        height:31vh; 
+       }
+       .tandc-background,.faqs-background{
+        height:27vh; 
+       }
+    .contact-background{
+        height: 200px;
+        margin-top: 13%;
+}
+    }
+@media screen and (max-width:375px){
+   .tandc-background,.contact-background,.faqs-background{
+    height: 25vh;
+   } 
+   .about-header{
+    height:25vh;
+   }
+   .contact-background{
+    height: 38px;
+}
+   .store-location-background{
+    height:31vh; 
+   }
+   .career-background{
+    height:31vh; 
+   }
+   .contact-background{
+    height: 180px;
+}
 
-@media screen and (max-width:425px){
-    .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
-     /* height: 43vh; */
-    } 
- }
 @media screen and (max-width:320px){
     .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
      height: 33vh;
-     border: 2px solid yellow;
     } 
+    .store-location-background{
+        height:39vh; 
+       }
 }
-}
+

@@ -1,4 +1,9 @@
 <?php include("includes/header.php")?>
+<div class="row">
+    <div class="faqs-background">
+        
+    </div>
+</div>
  <section class="container section-faq">
     <div class="row faq-container">
         <div class="col-md-12 text-center mt-5 mb-4">

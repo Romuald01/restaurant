@@ -40,7 +40,7 @@ include"includes/header.php";
                 <div class="col-md-12 how-it-works">
                     <hr class="line">
                     <div class="how-it-works-heading">
-                        <h1>How it works</h1>
+                        <h1 class="how-it-works-text">How it works</h1>
                     </div>
                 </div>
             </div>

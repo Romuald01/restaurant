@@ -19,6 +19,7 @@
             </div>
         </div>
     </footer>
+    <div class="notification-container notification-container-empty"><div>
 </div>
 
 

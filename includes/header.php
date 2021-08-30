@@ -42,6 +42,9 @@
                     <li class="nav-item">
                     <a class="nav-link" href="cart.php">Cart</a>
                     </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
                     <li class="nav-item signup-box">
                     <a class="nav-link signup-link" href="login.php">Signup/Login</a>
                     </li>

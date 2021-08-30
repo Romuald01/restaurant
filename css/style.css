@@ -97,9 +97,6 @@ padding: 5px;
     }
 }
 @media screen and (max-width:425px){
-    .same-width-img-box{
-        /* width: ; */
-    }
     .second-same-width-img{
         display: none;
     }
@@ -224,6 +221,7 @@ select option{
     text-align: center;
 
 }
+
 .center-box {
     display: flex;
     align-items: center;
@@ -332,6 +330,20 @@ footer span a:hover{
     padding: 10px;
     /* flex:wrap; */
 }
+/* notification styling start here */
+.notification-container {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 320px;
+    padding: 0 15px;
+    max-height: calc(100% - 30px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+/* notification styling ends here */
 
 /* ===================MEDIA QUERIES START HERE=================== */
 @media screen and (max-width:991px){
@@ -378,6 +390,8 @@ footer span a:hover{
 }
 footer{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 footer span{
     padding: 10px;
@@ -658,7 +672,7 @@ i{
 }
 .create-account-form input[type="text"],input[type="number"]{
     width: 100%;
-    padding:2px;
+    padding:3px;
 
 }
 /* styling of password toggling end here */
@@ -763,6 +777,14 @@ i{
         margin-left: 4% !important;
     }
   
+}
+@media screen and (max-width:414px){
+    .how-it-works-text{
+        font-size:18px;
+    }
+    .ordering-heading-main, .ordering-heading-sub {
+        font-size: 18px;
+}
 }
 
    
