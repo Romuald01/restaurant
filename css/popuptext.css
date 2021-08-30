@@ -1,0 +1,29 @@
+.modal-title{
+    color: #dc042a;   
+    font-weight: 700;
+    font-size: 30px;
+}
+.close{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+    opacity: 0.5;
+}
+.restaurant-location-name{
+    color: #dc042a;
+    color: #dc042a;
+    font-weight: 700;
+    font-size: 15px;
+}
+.restaurants .address-text{
+    color:#383838;
+}
+.modal-body .restaurants{
+    border-bottom: 1px solid #ededed;
+    width: 60%;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}

@@ -1,7 +1,7 @@
 .about-header{
     background-image: url("../images/about-us-img.jpeg");
     background-repeat: no-repeat;
-    height: 80vh;
+    height:60vh;
     background-size: 100%;
     background-position: 50%;
     display: block;
@@ -62,8 +62,18 @@
     /* justify-content: center; */
     align-items: center;
 }
-@media screen and (max-width:576px){
-   .about-header,.career-background,.tandc-background,.contact-background{
-    height: 74vh;
+@media screen and (max-width:577px){
+   .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
+    height: 55vh;
    } 
+}
+@media screen and (max-width:425px){
+    .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
+     height: 43vh;
+    } 
+ }
+@media screen and (max-width:320px){
+    .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
+     height: 38vh;
+    } 
 }

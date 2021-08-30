@@ -98,20 +98,14 @@ padding: 5px;
 }
 @media screen and (max-width:425px){
     .same-width-img-box{
-        width: ;
+        /* width: ; */
     }
     .second-same-width-img{
         display: none;
     }
-    /* .small-width-box{
-      width:20%;
-    } */
-    /* .same-width-img img,.small-width-box img{
-        padding: 2px;
-    } */
 }
 
-/* password toggling styling*/
+
 *,*::before,*::after{
     padding: 0px;
     margin: 0px;
@@ -120,7 +114,8 @@ padding: 5px;
 body{
     font-family: 'Ubuntu', sans-serif !important;
 }
-/*login,signin form password toggling  styling end here*/
+
+
 .navbar-brand{
     margin-left: 8% !important;
 }
@@ -321,6 +316,7 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10%;
+    display: flex;
 }
 footer span a{
     color:#fff;
@@ -331,6 +327,7 @@ footer span a:hover{
     color:#fff;
     text-decoration: none;
 }
+
 .social-media-div a{
     padding: 10px;
     /* flex:wrap; */
@@ -358,9 +355,7 @@ footer span a:hover{
     .app-store-img{
         height: 30px;
     }
-    /* .copyright{
-        text-align: center;
-    } */
+
 }
 
 @media screen and (max-width:767px){
@@ -374,7 +369,7 @@ footer span a:hover{
     height: 170px;
     width: 200px;
 }
-.copyright{
+.social-media-div{
     padding-top:20px;
     padding-bottom:20px;
 }
@@ -392,7 +387,22 @@ footer span{
 }
 }
 
+@media  screen and (max-width:576px) {
+    .footer-content-div{
+        display: flex;
+        flex:nowrap;
+    }
+.social-media-content-div{
+    order: 2;
+}
+.faq-content-div{
+    order:1;
+}
+.copyright-content-div{
+order:3;
+}
 
+}
 @media  screen and (max-width:425px) {
     .restaurant-logo{
         height: 37px;
@@ -607,10 +617,11 @@ text-align: left;
 .input-group{
     width: 60% !important;
 }
+/* password toggling styling*/
 .input-container input,.create-accpsw input{
     padding:2px;
     width:100%;
-    border:0;
+    border:1px solid black;
     font-size: 16px;
     border-radius: 3px;
     color:#000;
@@ -650,6 +661,8 @@ i{
     padding:2px;
 
 }
+/* styling of password toggling end here */
+
 .or-sign-with-text{
     color:#212529;;
     display: block;
