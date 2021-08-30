@@ -62,18 +62,36 @@
     /* justify-content: center; */
     align-items: center;
 }
-@media screen and (max-width:577px){
-   .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
-    height: 55vh;
+@media screen and (max-width:768px){
+    .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
+     height: 33vh;
+    } 
+ }
+@media screen and (max-width:375px){
+   .career-background,.tandc-background,.contact-background,.store-location-background{
+    height: 26vh;
    } 
+   .about-header{
+    height: 26vh;
+   }
 }
+@media screen and (max-width:414px){
+    .career-background,.tandc-background,.contact-background,.store-location-background{
+     height: 26vh;
+    } 
+    .about-header{
+        height: 31vh;
+       }
+
 @media screen and (max-width:425px){
     .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
-     height: 43vh;
+     /* height: 43vh; */
     } 
  }
 @media screen and (max-width:320px){
     .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{
-     height: 38vh;
+     height: 33vh;
+     border: 2px solid yellow;
     } 
+}
 }
