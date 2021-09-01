@@ -1,29 +1,44 @@
 const visibilityToggle = document.querySelector('.visibility');
+const visibilityToggle2 = document.querySelector('.visibility__2');
+
 const input = document.querySelector('.input-container input');
-var password = true;
+const input2 = document.querySelector('.password');
+
+var password1 = true;
+var password2 = true;
 
 visibilityToggle.addEventListener('click', function(){
-    if(password){
+    if(password1){
         input.setAttribute('type','text');
         visibilityToggle.innerHTML = 'visibility';
     }else{
         input.setAttribute('type','password');
         visibilityToggle.innerHTML = 'visibility_off';
     }
-    password = !password;
+    password1 = !password1;
 });
 
-const createAccVisibilityToggle = document.querySelector('.visibility');
-const createAccInput = document.querySelector('.create-accpsw createAccinput');
-var password = true;
 
-createAccVisibilityToggle.addEventListener('click', function(){
-    if(password){
-        createAccInput.setAttribute('type','text');
-       createAccVisibilityToggle.innerHTML = 'visibility';
+
+visibilityToggle2.addEventListener('click', function(){
+    if(password2){
+        input2.setAttribute('type','text');
+        visibilityToggle2.innerHTML = 'visibility';
     }else{
-        createAccInput.setAttribute('type','password');
-       createAccVisibilityToggle.innerHTML = 'visibility_off';
+        input2.setAttribute('type','password');
+        visibilityToggle2.innerHTML = 'visibility_off';
     }
-    password = !password;
+    password2 = !password2;
 });
+
+
+
+
+// function firstButton(){
+//     alert("first button");
+
+// }
+// function secondButton(){
+//     alert("second button");
+    
+// }

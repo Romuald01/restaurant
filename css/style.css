@@ -45,6 +45,15 @@
     object-fit: cover;
 }
 
+.text{
+    border: 1px solid #dc042a;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #dc042a;
+    border-radius: 6px;
+
+
+}
 .first-slide-images{
     display: flex !important;
     flex-direction: row !important;

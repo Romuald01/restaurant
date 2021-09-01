@@ -1,7 +1,66 @@
 <?php 
-// session_start();
-// $_SESSION();
-include("includes/header.php")
+include 'config.php';
+include 'includes/header.php';
+
+error_reporting(0);
+
+session_start();
+
+if (isset($_SESSION['firstname'])) {
+    header("Location: index.php");
+}
+
+if (isset($_POST['submit'])) {
+	$firstname  = $_POST['firstname'];
+	$lastname = $_POST['lastname'];
+    $phonenumber = $_POST['phonenumber'];
+    $email = $_POST['email'];
+	$password = md5($_POST['password']);
+
+	// if ($password == $cpassword) {
+		$sql = "SELECT * FROM users WHERE email = '$email'";
+		$result = mysqli_query($conn, $sql);
+		if (!$result->num_rows > 0) {
+			$sql = "INSERT INTO users (firstname, lastname, phonenumber, email,  password)
+					VALUES ('$firstname', '$lastname',  $phonenumber, '$email', '$password')";
+			$result = mysqli_query($conn, $sql);
+			if ($result) {
+				echo "<script>alert('Wow! User Registration Completed.')</script>";
+				$firstname = "";
+				$lastname = "";
+				$phonenumber = "";
+                $email = "";
+				$_POST['password'] = "";
+				// $_POST['cpassword'] = "";
+                header("Location:career.php");
+			} else {
+				echo "<script>alert('Woops! Something Wrong Went.')</script>";
+			}
+		} else {
+			echo "<script>alert('Woops! Email Already Exists.')</script>";
+		}
+		
+}
+
+// if (isset($_SESSION['username'])) {
+//     header("Location: welcome.php");
+// }
+
+// if (isset($_POST['submit'])) {
+// 	$email = $_POST['email'];
+// 	$password = md5($_POST['password']);
+
+// 	$sql = "SELECT * FROM users WHERE email = '$email' AND password='$password'";
+// 	$result = mysqli_query($conn, $sql);
+// 	if ($result->num_rows > 0) {
+// 		$row = mysqli_fetch_assoc($result);
+// 		$_SESSION['username'] = $row['username'];
+// 		header("Location: welcome.php");
+// 	} else {
+// 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
+// 	}
+// }
+
 
 ?>
 <div class="container">
@@ -11,10 +70,10 @@ include("includes/header.php")
             <p class="signin-greeting">Welcome back! Sign in to your Account</p>
             <form action="#" method="post" class="signin-form">
                 <label for="email">Email Address</label>
-                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>" required>
                 <label for="">password</label>
                 <div class="input-container">
-                    <input type="password" placeholder="Password" name="password" required>
+                    <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password'];?>" required>
                     <i class="material-icons visibility">visibility_off</i>
                 </div>
                 <div class="password-sub-content">
@@ -27,7 +86,7 @@ include("includes/header.php")
                         <a href="#" class="change-psw-link">forget password?</a>
                     </div>
                 </div>   
-                <button type="submit" name="login" class="btn my-3 btn-login"><span class="text">Login</span>
+                <button type="submit" name="submit" class="btn my-3 btn-login"><span class="text">Login</span>
                 </button> 
                 <span class="or-sign-with-text">Or sign in with</span>
                 <div class="other-social">
@@ -58,19 +117,19 @@ include("includes/header.php")
             <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
             <form action="#" method="post" class="signin-form create-account-form">
                 <label for="firstname">First Name</label>
-                <input type="text" placeholder="First Name*" name="first_name">
+                <input type="text" placeholder="First Name*" name="firstname" value="<?php echo $_POST['firstname']; ?>" required>
                 <label for="firstname">Last Name</label>
-                <input type="text" placeholder="lastname*" name="last_name">
+                <input type="text" placeholder="lastname*" name="lastname" value="<?php echo $_POST['lastname']; ?>" required>
                 <label for="firstname">Phone Number</label>
-                <input type="number" placeholder="+2349063514430*" name="phone_number">
+                <input type="number" placeholder="+2349063514430*" name="phonenumber" value="<?php echo $_POST['phonenumber']; ?>" required>
                 <label for="email">Email Address</label>
-                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>"  required>
                 <label for="">password</label>
-                <div class="input-container create-accpsw">
-                    <input type="password" placeholder="Password" name="password" required class="createAccinput">
-                    <i class="material-icons visibility">visibility_off</i>
+                <div class="input-container">
+                    <input type="password" placeholder="Password" class="password create-accpsw" value="<?php echo $_POST['password']; ?>"  name="password" required>
+                    <i class="material-icons visibility visibility__2">visibility_off</i>
                 </div>
-                <button type="submit" name="login" class="btn my-3 btn-login"><span class="text">Login</span></button>
+                <button type="submit" name="submit" class="btn my-3 btn-login"><span class="text">Login</span></button>
                 <span class="or-sign-with-text my-2 d-block">Or sign in with</span>
                 <div class="other-social">
                     <div class="">
@@ -107,4 +166,6 @@ include("includes/header.php")
             </div>
         </div>
     </div>
+    <button type="submit" onclick="firstButton()">first</button>
+    <button type="submit" onclick="firstButton()">second</button>
 <?php include("includes/footer.php")?>
