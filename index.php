@@ -1,25 +1,21 @@
 <?php
-include("includes/header.php");
 include('config.php');
+include("includes/header.php");
 
-session_start();
+// session_start();
 
-error_reporting(0);
-
-if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
-}
+// error_reporting(0);
 
 if (isset($_POST['submit'])) {
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+	$sql = "SELECT * FROM users WHERE email = '$email' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
-		$_SESSION['first_name'] = $row['first_name'];
-		header("Location: welcome.php");
+		$_SESSION['firstname'] = $row['first_name'];
+		header("Location: index.php");
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}

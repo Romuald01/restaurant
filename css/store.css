@@ -129,6 +129,7 @@
     margin-top: 7%;
 }
 
+/* contact us styling */
 .leave-message-heading,.service-hours{
     color:rgb(220, 4, 42);
     font-size: 30px;
@@ -223,6 +224,11 @@ font-weight: 600;
     height: 30px;
     padding: 10px;
 }
+.btn-submit-msg{
+margin-top: -2%;
+}
+.form
+/* contact us styling ends*/
 /* store styling ends here */
 
 /* store-media query start here */
@@ -274,9 +280,5 @@ font-size: 29px;
     font-size: 14px;
 }
 }
-
-
-
-
 
 /* store-media query end here */

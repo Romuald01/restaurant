@@ -119,6 +119,7 @@
    .contact-background{
     height: 180px;
 }
+}
 
 @media screen and (max-width:320px){
     .about-header,.career-background,.tandc-background,.contact-background,.store-location-background{

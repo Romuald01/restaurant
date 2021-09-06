@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/store.css">
     <link rel="stylesheet" href="css/collapse.css">
     <link rel="stylesheet" href="css/terms.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/button.css">
 
     <title>Restaurant</title>
 </head>
@@ -29,29 +31,41 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                     <a class="nav-link" href="index.php">Order Now</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item">   
                     <a class="nav-link" href="about.php">About</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="store-location.php">Store Locations</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="career.php">Career</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="cart.php">Cart</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contact</a>
+                    <hr class="cool cool--m">
                     </li>
                     <li class="nav-item signup-box">
                     <a class="nav-link signup-link" href="login.php">Signup/Login</a>
+                    <hr class="cool cool--m">
+                    <!-- <div class="nav-item nav-bg-white account-toggle">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Romuald
+                        </a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="/account">My Account</a>
+                            <a class="dropdown-item">Log out</a>
+                        </div>
+                    </div> -->
                     </li>
                 </ul>
             </div>
-            <div class="d-none nav-item nav-bg-white account-toggle show"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Romuald</a><div class="dropdown-menu show"><a class="dropdown-item" href="/account">My Account</a><a class="dropdown-item">Log out</a></div></div>
-
         </nav>
     </header>
     <div class="container-fluid">

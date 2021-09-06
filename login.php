@@ -1,68 +1,25 @@
 <?php 
-// include 'config.php';
-// include 'includes/header.php';
+include 'config.php';
 
-// error_reporting(0);
+error_reporting(0);
 
-// session_start();
+session_start();
 
 // if (isset($_SESSION['firstname'])) {
 //     header("Location: index.php");
 // }
 
-// if (isset($_POST['submit'])) {
-// 	$firstname  = $_POST['firstname'];
-// 	$lastname = $_POST['lastname'];
-//     $phonenumber = $_POST['phonenumber'];
-//     $email = $_POST['email'];
-// 	$password = md5($_POST['password']);
 
-// 	// if ($password == $cpassword) {
-// 		$sql = "SELECT * FROM users WHERE email = '$email'";
-// 		$result = mysqli_query($conn, $sql);
-// 		if (!$result->num_rows > 0) {
-// 			$sql = "INSERT INTO users (firstname, lastname, phonenumber, email,  password)
-// 					VALUES ('$firstname', '$lastname',  $phonenumber, '$email', '$password')";
-// 			$result = mysqli_query($conn, $sql);
-// 			if ($result) {
-// 				echo "<script>alert('Wow! User Registration Completed.')</script>";
-// 				$firstname = "";
-// 				$lastname = "";
-// 				$phonenumber = "";
-//                 $email = "";
-// 				$_POST['password'] = "";
-// 				// $_POST['cpassword'] = "";
-//                 header("Location:career.php");
-// 			} else {
-// 				echo "<script>alert('Woops! Something Wrong Went.')</script>";
-// 			}
-// 		} else {
-// 			echo "<script>alert('Woops! Email Already Exists.')</script>";
-// 		}
-		
+// if (isset($_SESSION['firstname'])) {
+//     header("Location: index.php");
 // }
+include("logics/register.php");
+include("logics/loginlogic.php");
 
-// if (isset($_SESSION['username'])) {
-//     header("Location: welcome.php");
-// }
-
-// if (isset($_POST['submit'])) {
-// 	$email = $_POST['email'];
-// 	$password = md5($_POST['password']);
-
-// 	$sql = "SELECT * FROM users WHERE email = '$email' AND password='$password'";
-// 	$result = mysqli_query($conn, $sql);
-// 	if ($result->num_rows > 0) {
-// 		$row = mysqli_fetch_assoc($result);
-// 		$_SESSION['username'] = $row['username'];
-// 		header("Location: welcome.php");
-// 	} else {
-// 		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
-// 	}
-// }
 
 
 ?>
+<?php include 'includes/header.php'; ?>
 <div class="container">
     <div class="row signin-and-login-form">
         <div class="col-md-5">
@@ -73,7 +30,7 @@
                 <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>" required>
                 <label for="">password</label>
                 <div class="input-container">
-                    <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password'];?>" required>
+                    <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
                     <i class="material-icons visibility">visibility_off</i>
                 </div>
                 <div class="password-sub-content">
@@ -83,10 +40,10 @@
                         </span>
                     </div>
                     <div>
-                        <a href="#" class="change-psw-link">forget password?</a>
+                        <a href="forget-password.php" class="change-psw-link">forget password?</a>
                     </div>
                 </div>   
-                <button type="submit" name="submit" class="btn my-3 btn-login"><span class="text">Login</span>
+                <button class="btn  btn-login mt-3" name="login"><span class="text">Login</span></button>
                 </button> 
                 <span class="or-sign-with-text">Or sign in with</span>
                 <div class="other-social">
@@ -126,10 +83,11 @@
                 <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>"  required>
                 <label for="">password</label>
                 <div class="input-container">
-                    <input type="password" placeholder="Password" class="password create-accpsw" value="<?php echo $_POST['password']; ?>"  name="password" required>
+                    <input type="password" placeholder="Password" class="create-password create-accpsw" value="<?php echo $_POST['password']; ?>"  name="password" required>
                     <i class="material-icons visibility visibility__2">visibility_off</i>
                 </div>
-                <button type="submit" name="submit" class="btn my-3 btn-login"><span class="text">Login</span></button>
+                 <button class="btn btn-login mt-3" name="submit"><span class="text">Register</span></button>
+
                 <span class="or-sign-with-text my-2 d-block">Or sign in with</span>
                 <div class="other-social">
                     <div class="">
@@ -147,25 +105,6 @@
         </div>
     </div>
 </div>
-    <div class="row app-store-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 app-store-text-div">
-                    <p class="app-store-text">With the Kilimeals app, anyone can simply use a mobile device
-                        to look over our numerous delicacies. All you need to do is to
-                        place an order, and pick up in-store or have it delivered to your
-                        doorstep</p>
-                        <div class="appstore-images-link">
-                        <a href="www.googleplay.com"><img src="images/playstore.png" alt="app-store-logo" class="app-store-img"></a>
-                            <a href="www.appstore.com"><img src="images/appstore.png" alt="app-store-logo" class="app-store-img app-store"></a>
-                        </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- to be added shortly -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <button type="submit" onclick="firstButton()">first</button>
-    <button type="submit" onclick="firstButton()">second</button>
+
+<?php include("includes/app-store-div.php")?>
 <?php include("includes/footer.php")?>

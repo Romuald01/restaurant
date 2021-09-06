@@ -3,5 +3,4 @@
 
 
 
-
-<?php include("imcludes/footer.php")?>
+<?php include("includes/footer.php")?>

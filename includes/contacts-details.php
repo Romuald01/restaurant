@@ -2,14 +2,12 @@
 <div class="row mt-5 leave-and-schedule-hour-container">
         <div class="col-md-5">
             <h5 class="leave-message-heading">Leave us a Message</h5>
-            <form action="#" method="post" enctype="formdata-multipart" class="store-form">
-                    <input type="text" name="" placeholder="Your name*">
-                    <input type="email" name="" placeholder="Your email address*">
-                    <input type="text" name="" placeholder="Your number*">
-                    <textarea name="" id="" cols="30" rows="10"placeholder="Your number*">
-                       
-                    </textarea>
-                    <input type="submit" name="" value="submit">
+            <form action="#" method="post"  class="store-form">
+                    <input type="text" name="sender_name" placeholder="Your name*">
+                    <input type="email" name="email" placeholder="Your email address*">
+                    <input type="text" name="phonenumber" placeholder="Your number*">
+                    <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                    <button class="btn w-100 btn-submit-msg" name="submit"><span class="text">Submit</span></button>
             </form>
         </div>
         <div class="col-md-2 vertical-line-div">

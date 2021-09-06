@@ -35,8 +35,6 @@
     font-feature-settings: 'liga';
   }
 
-
-
 .first-slide-images .d-block{
     width: 100%;
     display: block !important;
@@ -45,19 +43,10 @@
     object-fit: cover;
 }
 
-.text{
-    border: 1px solid #dc042a;
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #dc042a;
-    border-radius: 6px;
-
-
-}
 .first-slide-images{
     display: flex !important;
     flex-direction: row !important;
-object-fit: cover;
+    object-fit: cover;
 }
 .same-width-img-box{
     border: 1px solid yellow;
@@ -141,7 +130,26 @@ nav .collapse{
 }
 .nav-item{
     padding: 6px;
+   
 }
+.nav-item:hover .cool{
+ width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.cool{
+    background-color: white;
+    width: 0%;
+    height: 1px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    margin: 0 auto;
+  }
+
 .nav-link{
     color:#fff !important;
     font-size: 18px !important;
@@ -619,17 +627,18 @@ text-align: left;
     color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
 }
-.signin-form input[type="email"]{
+.signin-form input[type="email"],.edit-account-form input[type="email"]{
     padding:2px;
     width:100%;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #000; 
 }
-.signin-form input[type="email"],input[type="text"]:focus{
+.signin-form input[type="email"],input[type="text"]:focus,.edit-account-form input[type="email"],.forget-psw-form input[type="email"],
+input[type="text"]:focus{
     outline-color: #dc042a;
 }
-.signin-form label{
+.signin-form label,.edit-account-form label,.change-password-form label,.forget-psw-form label{
     font-weight: 600;
     font-size: 18px;
     line-height: 27px;
@@ -641,8 +650,8 @@ text-align: left;
     width: 60% !important;
 }
 /* password toggling styling*/
-.input-container input,.create-accpsw input{
-    padding:2px;
+.input-container input,.create-accpsw input,.change-password-form input,.forget-psw-form input{
+    padding:3px;
     width:100%;
     border:1px solid black;
     font-size: 16px;
@@ -651,7 +660,7 @@ text-align: left;
 
 }
 
-.create-account-form input[type="text"],.create-account-form  input[type="number"]{
+.create-account-form input[type="text"],.create-account-form input[type="number"]{
     border-radius: 3px;
 }
 .input-container input[type="password"]:focus,input[type="password"]:focus,input[type="number"]:focus{
@@ -679,7 +688,10 @@ i{
     position: absolute;
     right: 3%;
 }
-.create-account-form input[type="text"],input[type="number"]{
+.change-password-form i{
+    right: 12%;
+}
+.create-account-form input[type="text"],input[type="number"],.edit-account-form input[type="text"],input[type="number"]{
     width: 100%;
     padding:3px;
 

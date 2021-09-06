@@ -1,0 +1,81 @@
+.account-container{
+    margin-top: 6%;
+}
+.account-heading-main{
+    color:#dc042a;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.account-heading-sub{
+    color:#383838;
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 600;
+}
+.account-details{
+    border-top: 1px solid #000;
+}
+.account-details .account-data{
+    width:100%;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color:#7f7f7f;
+    padding: 5px;
+}
+.account-changes-div{
+    display: flex;
+
+}
+.account-changes-div .account-btn{
+    padding: 5px;
+    border:1px solid #dc042a;
+    background: #dc042a;
+    margin: 10px;
+    color:#fff;
+}
+.edit-account-container{
+    margin-top: 10%;
+    padding: 0px 10px;
+    border: 2px solid #7f7f7f;;
+}
+
+.edit-account-heading{
+    text-align: center;
+    color:#dc042a;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.edit-account-paragraph{
+    color:#7f7f7f;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    text-align: center;
+}
+.edit-account-form{
+    border: none;
+}
+.border-line{
+    padding:40px 50px;
+}
+.edit-account-form input[type="email"]{
+    padding: 4px;
+}
+.account-btn a{
+    color:#fff;
+}
+.account-btn a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.forget-psw-form-container{
+    margin-top: 10%;
+    border:1px solid #7f7f7f;
+    padding:40px 50px;
+}
+
+
