@@ -21,6 +21,25 @@
     <title>Restaurant</title>
 </head>
 <body>
+    <?php
+        include("config.php");
+        include("includes/select_from_db_logic.php");
+        ?>
+        <?php
+        if(mysqli_num_rows($result) > 0 ){
+           echo  "<div id='signupbox' style='display:none'>";
+        }else{
+            echo "<div id='signupbox' style='display:block'>";
+        }
+        ?>
+        <?php
+            // if(isset($_POST['logout'])){
+            //     echo "<script>alert('dropdown box is hided')</script>"; 
+            // }else{
+            //     echo "<script>alert('dropdown box is not hided')</script>"; 
+            // }
+        ?>
+  
         <nav class="navbar fixed-top navbar-expand-lg">
             <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="" class="restaurant-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,17 +72,20 @@
                     <a class="nav-link" href="contact.php">Contact</a>
                     <hr class="cool cool--m">
                     </li>
-                    <li class="nav-item signup-box">
-                    <a class="nav-link signup-link" href="login.php">Signup/Login</a>
-                    <hr class="cool cool--m">
-                    <!-- <div class="nav-item nav-bg-white account-toggle">
-                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Romuald
+                    <li class="nav-item signup-box" id="signupbox">
+                        <a class="nav-link signup-link" href="login.php">Signup/Login</a>
+                        <hr class="cool cool--m">
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <?php echo $rows['first_name']; ?>
                         </a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="/account">My Account</a>
-                            <a class="dropdown-item">Log out</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                            <a class="dropdown-item" href="account.php">My Account</a>
+                            <a class="dropdown-item" name="logout" href="logout.php">log out</a>
                         </div>
-                    </div> -->
                     </li>
+                </div>
                 </ul>
             </div>
         </nav>

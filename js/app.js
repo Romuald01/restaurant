@@ -1,3 +1,6 @@
+var hidebox = document.getElementById('signupbox').style.display = 'none';
+var showbox = document.getElementById('signupbox').style.display = 'block';
+
 const visibilityToggle = document.querySelector('.visibility');
 const visibilityToggle2 = document.querySelector('.visibility__2');
 const visibilityToggle3 = document.querySelector('.visibility__3');
@@ -73,3 +76,4 @@ visibilityToggle4.addEventListener('click', function(){
 //     }
 //     password5 = !password5;
 // });
+document.getElementById('signupbox').style.display = "none";

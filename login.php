@@ -5,14 +5,6 @@ error_reporting(0);
 
 session_start();
 
-// if (isset($_SESSION['firstname'])) {
-//     header("Location: index.php");
-// }
-
-
-// if (isset($_SESSION['firstname'])) {
-//     header("Location: index.php");
-// }
 include("logics/register.php");
 include("logics/loginlogic.php");
 

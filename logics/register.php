@@ -15,14 +15,14 @@ if (isset($_POST['submit'])) {
 					VALUES ('$firstname', '$lastname',  $phonenumber, '$email', '$password')";
 			$result = mysqli_query($conn, $sql);
 			if ($result) {
-				echo "<script>alert('Account created successfully.')</script>";
+				// echo "<script>alert('Account created successfully.')</script>";
+				echo "<script>alert('Account created successfully.'); window.location='index.php'</script>";
 				$firstname = "";
 				$lastname = "";
 				$phonenumber = "";
                 $email = "";
 				$_POST['password'] = "";
-				// $_POST['cpassword'] = "";
-                // header("Location:index.php");
+			
 			} else {
 				echo "<script>alert('Woops! Something Wrong Went.')</script>";
 			}

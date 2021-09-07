@@ -165,7 +165,14 @@ nav .collapse{
     color: rgb(220, 4, 42) !important;
     /* padding: 4px !important; */
 }
-
+.dropdown-toggle{
+    text-transform: uppercase;
+    color:#dc042a !important;
+}
+.dropdown{
+    background-color: #fff;
+    /* padding: 3px; */
+}
 /* header styling end */
 .ordering-heading-contents{
     display: block;

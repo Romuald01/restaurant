@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button class="bt btn-link collapsed button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 <span class="faqs-text">How many stores do you have and in what locations?</span>
                                 <img src="images/icon-arrow.svg" alt="" class="arrow-down">
                             </button>
@@ -29,7 +29,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="bt btn-link collapsed button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 When do you open?
                                 <img src="images/icon-arrow.svg" alt="" class="arrow-down">
                             </button>
@@ -43,7 +43,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Can i order and pay for food online?
                                 <img src="images/icon-arrow.svg" alt="" class="arrow-down">
                             </button>
@@ -58,7 +58,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <button class=" btn-link collapsed button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 What is the delivery time?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -73,7 +73,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 What's your menu like?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -88,7 +88,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             I want to order my native delicacy,can i find it in your restaurant?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -103,7 +103,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                 What kind of chicken did you have?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -118,7 +118,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                             How many salad varieties do you have?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -133,7 +133,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                             How are you able to sell such good food at pockect-friendly prices?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
@@ -148,7 +148,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0 box">
-                            <button class="btn btn-link collapsed button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                            <button class="btn-link collapsed button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                             Where do you source your raw material?
                                 <img src="images/icon-arrow.svg" alt="arrow-down">
                             </button>
