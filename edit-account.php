@@ -13,13 +13,13 @@
                         <div class="edit-account-form-div">
                             <form action="" class="edit-account-form" method="post">
                             <label for="firstname">First Name</label>
-                            <input type="text" placeholder="First Name*" name="edit-acc-firstname"  value="<?php echo $rows['first_name']; ?>"  required>
+                            <input type="text" placeholder="First Name*" name="first" value="<?php echo $rows['first_name']; ?>"   required>
                             <label for="firstname">Last Name</label>
-                            <input type="text" placeholder="lastname*" name="edit-acc-lastname"  value="<?php echo $rows['last_name']; ?>" required>
+                            <input type="text" placeholder="lastname*" name="last"  value="<?php echo $rows['last_name']; ?>" required>
                             <label for="firstname">Phone Number</label>
-                            <input type="number" placeholder="+234 90 6351 4430*" name="editphone" value="<?php echo $rows['phone_number']; ?>"  required>
+                            <input type="number" placeholder="+234 90 6351 4430*" name="accphone" value="<?php echo $rows['phone_number']; ?>"  required>
                             <label for="email">Email Address</label>
-                            <input type="email" placeholder="Example@gmail.com" name="edit-acc-email" value="<?php echo $rows['email']; ?>" required>
+                            <input type="email" placeholder="Example@gmail.com" name="accemail" value="<?php echo $rows['email']; ?>" required>
                             <button class="btn w-100 btn-edit-acct mt-3" name="edit_acct_btn"><span class="text">Send</span></button>
                             </form>
                         </div>
@@ -34,22 +34,24 @@
 include("includes/select_from_db_logic.php"); 
 
 //  code to update database
- $newFirstName = $_POST['edit-acc-firstname'];
- $newLastName = $_POST['edit-acc-lastname'];
- $newPhoneNumber = $_POST['editphone'];
- $newEmail = $_POST['edit-acc-email'];
-
+ $newFirstName = $_POST['first'];
+ $newLastName = $_POST['last'];
+ $newPhone= $_POST['accphone'];
+ $newEmail = $_POST['accemail'];
+ 
     if(isset($_POST['edit_acct_btn'])){
-        $Account = "UPDATE users set first_name = '$newFirstName' where id = 30 ";
-        // $Account = "UPDATE users set first_name = '$newFirstName',last_name = '$newLastName',phone_number ='$newPhoneNumber',email ='$newEmail'";
-
-        $update = mysqli_query($conn, $Account);
+        $update_account = "UPDATE users set first_name='$newFirstName', last_name='$newLastName', phone_number='$newPhone', email='$newEmail' order by id DESC ";
+        $update = mysqli_query($conn,$update_account);
         if($update){
-            echo "user account updated";
+            echo "<script>alert('Account Updated Sucessfully'); window.location='index.php'</script>";
         }else{
-            echo "user account has not been updated";
+            echo "<script>alert('Account Not Updated');</script>";
         }
+
+    }else{
+        echo "password not updated";
     }
+    mysqli_close($conn);
     
  
 ?>

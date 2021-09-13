@@ -1,0 +1,38 @@
+.fixed-top{
+    background-color: #dc042a !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    
+}
+.space-around{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.other-link,.signup-text{
+color:#fff !important;
+font-size: 18px !important;
+font-family: Ubuntu,sans-serif;
+padding: 5px;
+}
+li .other-link{
+margin-top: 8%;
+}
+.user-box{
+    background-color:#fff;
+    padding:10px;
+    text-transform: uppercase;
+    color:#dc042a !important;
+}
+.user-box:hover{
+    background-color: #fff !important;
+}
+.signup-text{
+    margin-top: -10px !important;  
+ }
+ .caret{
+     color:#fff !important;
+ }
+ .signup-box-div{
+     margin-top: 4%;
+ }

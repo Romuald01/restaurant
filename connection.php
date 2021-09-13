@@ -3,13 +3,13 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "restaurant";
+$dbname = "foodordermodel";
 
 
 // for connection
-$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+$conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
-if(!$con){
+if(!$conn){
     die("Failed to connect");
 }
 ?>

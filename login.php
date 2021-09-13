@@ -1,14 +1,9 @@
 <?php 
-include 'config.php';
+include 'connection.php';
 
 error_reporting(0);
 
 session_start();
-
-include("logics/register.php");
-include("logics/loginlogic.php");
-
-
 
 ?>
 <?php include 'includes/header.php'; ?>
@@ -64,13 +59,13 @@ include("logics/loginlogic.php");
         <div class="col-md-5">
             <h3 class="signin-heading">Create New Account</h3>
             <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
-            <form action="#" method="post" class="signin-form create-account-form">
+            <form action="customer_registered_success.php" method="post" class="signin-form create-account-form">
                 <label for="firstname">First Name</label>
-                <input type="text" placeholder="First Name*" name="firstname" value="<?php echo $_POST['firstname']; ?>" required>
+                <input type="text" placeholder="First Name*" name="fullname" value="<?php echo $_POST['firstname']; ?>" required>
                 <label for="firstname">Last Name</label>
                 <input type="text" placeholder="lastname*" name="lastname" value="<?php echo $_POST['lastname']; ?>" required>
                 <label for="firstname">Phone Number</label>
-                <input type="number" placeholder="+2349063514430*" name="phonenumber" value="<?php echo $_POST['phonenumber']; ?>" required>
+                <input type="number" placeholder="+2349063514430*" class="create-num" name="contact" value="<?php echo $_POST['contact']; ?>" required>
                 <label for="email">Email Address</label>
                 <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>"  required>
                 <label for="">password</label>
@@ -78,7 +73,7 @@ include("logics/loginlogic.php");
                     <input type="password" placeholder="Password" class="create-password create-accpsw" value="<?php echo $_POST['password']; ?>"  name="password" required>
                     <i class="material-icons visibility visibility__2">visibility_off</i>
                 </div>
-                 <button class="btn btn-login mt-3" name="submit"><span class="text">Register</span></button>
+                 <button class="btn btn-login mt-3" name=""><span class="text">Register</span></button>
 
                 <span class="or-sign-with-text my-2 d-block">Or sign in with</span>
                 <div class="other-social">

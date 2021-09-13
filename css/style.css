@@ -1,4 +1,5 @@
 
+
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -110,7 +111,6 @@ body{
     font-family: 'Ubuntu', sans-serif !important;
 }
 
-
 .navbar-brand{
     margin-left: 8% !important;
 }
@@ -165,6 +165,7 @@ nav .collapse{
     color: rgb(220, 4, 42) !important;
     /* padding: 4px !important; */
 }
+
 .dropdown-toggle{
     text-transform: uppercase;
     color:#dc042a !important;
@@ -526,6 +527,7 @@ text-align: left;
         font-size: 15px;
     }
 }
+
 @media screen and (max-width:320px){
         .restaurant-logo{
             height: 30px;
@@ -683,8 +685,8 @@ input[type="text"]:focus{
     border-radius: 3px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.create-num::-webkit-outer-spin-button,
+.create-num::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -813,9 +815,28 @@ i{
 
 }
 
-   
-
-
 /* login and signin styling end here */
+/* account-styling start here */
+.user-account-details{
+    border: 2px solid black !important;
+    height: 200px;
+}
+@media screen and (max-width:425px){
+    .account-changes-div .text a{
+        font-size: 14px !important;
+        padding:5px;
+    }
+    .btn{
+        padding:4px 8px !important;
+        margin:3px;
+    }
+
+}
+@media screen and (max-width:320px){
+    .btn{
+        padding:2px 2px !important;
+        font-size: 12px !important;
+    }
+}
 /* ===================MEDIA QUERIES START HERE=================== */
 

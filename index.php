@@ -1,27 +1,9 @@
-<?php
-include('config.php');
-include("includes/header.php");
+<?php 
 
-// session_start();
-
-// error_reporting(0);
-
-if (isset($_POST['submit'])) {
-	$email = $_POST['email'];
-	$password = md5($_POST['password']);
-
-	$sql = "SELECT * FROM users WHERE email = '$email' AND password='$password'";
-	$result = mysqli_query($conn, $sql);
-	if ($result->num_rows > 0) {
-		$row = mysqli_fetch_assoc($result);
-		$_SESSION['firstname'] = $row['first_name'];
-		header("Location: index.php");
-	} else {
-		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
-	}
-}
-
-?>
+include"includes/header.php";
+?>   
+  <div class="container-fluid">
+    <!-- <div class="row"> -->
     <div class="container">
         <div class="row ordering-headings">
                 <div class="col-md-12 ordering-heading-contents">
@@ -36,22 +18,24 @@ if (isset($_POST['submit'])) {
         </div>
         <div class="row ordering-form-section">
             <div class="col-md-12 input-content">
-                    <form action="#" method="#" enctype="multipart/form-data"> 
+                    <form action="#" method="post" enctype="multipart/form-data"> 
                             <select name="state" id="" class="first-select">
-                                <option value="Lagos" class="option">Lagos</option>
-                                <option value="Kwara">Kwara</option>
-                                <option value="Osun">Osun</option>
-                                <option value="Ibadan">Ibadan</option>
-                                <option value="Abia">Abia</option>
-                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Lagos" name="state" class="option">Lagos</option>
+                                <option value="Kwara" name="state">Kwara</option>
+                                <option value="Osun" name="state">Osun</option>
+                                <option value="Ibadan" name="state">Ibadan</option>
+                                <option value="Abia" name="state">Abia</option>
+                                <option value="Ebonyi" name="state">Ebonyi</option>
                             </select>
+                            <!-- <p style="cursor:pointer" onclick="butt()">Sango</p> -->
+
                             <select name="state" id="" class="second-select">
-                                <option value="Ogun" class="option">Ogun</option>
-                                <option value="Kwara">Kwara</option>
-                                <option value="Osun">Osun</option>
-                                <option value="Ibadan">Ibadan</option>
-                                <option value="Abia">Abia</option>
-                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Ogun" name="location" onclick="locate()" class="locate">Sango</option>
+                                <option value="Kwara" name="location" onclick="locate()"; class="option">Ilaro</option>
+                                <option value="Osun" name="location" class="option" >Ifo</option>
+                                <option value="Ibadan" name="location" class="option">Sabo</option>
+                                <option value="Abia" name="location" class="option">Poly</option>
+                                <option value="Ebonyi" name="location" class="option">Ibese</option>
                             </select>
                     </form>
             </div>

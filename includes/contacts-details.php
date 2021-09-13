@@ -1,11 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+</head>
+<body>
+    
+</body>
+</html>
 <div class="container">
 <div class="row mt-5 leave-and-schedule-hour-container">
         <div class="col-md-5">
             <h5 class="leave-message-heading">Leave us a Message</h5>
             <form action="#" method="post"  class="store-form">
-                    <input type="text" name="sender_name" placeholder="Your name*">
+                    <input type="text" name="name" placeholder="Your name*">
                     <input type="email" name="email" placeholder="Your email address*">
-                    <input type="text" name="phonenumber" placeholder="Your number*">
+                    <input type="text" name="subject" placeholder="Your number*">
                     <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" maxlength="140" rows="7"></textarea>
                     <button class="btn w-100 btn-submit-msg" name="submit"><span class="text">Submit</span></button>
             </form>
