@@ -16,12 +16,13 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="css/store.css">
+  <link rel="stylesheet" type="text/css" href="css/store.css"> 
+  <link rel="stylesheet" type="text/css" href="css/collapse.css"> 
   <link rel="stylesheet" type="text/css" href="css/career.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="css/terms.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
-  <link rel="stylesheet" type="text/css" href="css/faqs.css">
+  <link rel="stylesheet" type="text/css" href="css/faq.css">
   <link rel="stylesheet" type="text/css" href="css/popuptext.css">
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <link rel="stylesheet" href="css/account.css">
@@ -57,6 +58,16 @@ session_start();
             height: 25px;
         }
 }
+ 
+.other-link{
+color:#fff !important;
+/* font-size: 18px !important; */
+/* font-family: Ubuntu,sans-serif; */
+
+}
+li .other-link{
+margin-top: 8%;
+} */
 </style>
     <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation"style="background-color: #dc042a;">
       <div class="container">
@@ -149,7 +160,8 @@ else if (isset($_SESSION['login_user2'])) {
               ?>)
              </a></li>
              
-            <li><a href="#" class="other-link user-box"><?php echo $_SESSION['login_user2']; ?> </a></li>
+            <li><a href="#" class="other-link user-box"style="margin-top:4px;font-size:18px;"><?php echo $_SESSION['login_user2']; ?> </a>
+          </li>
             <li><a href="logout_u.php" class="other-link">Log Out </a></li>
           </ul>
   <?php        

@@ -10,7 +10,7 @@ header("location: customerlogin.php");
 <html>
 
   <head>
-    <title> Cart | Le Cafe' </title>
+    <title>kilimanjaro Restaurant</title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/cart.css">
@@ -50,7 +50,7 @@ header("location: customerlogin.php");
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
           </button>
-          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo.svg" alt="restaurant-logo"></a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">

@@ -1,6 +1,6 @@
 @media screen and (min-width:1025px){
     .navbar-fixed-top{
-        height: 70px;
+        height: 100px;
     }
 }
 .navbar-fixed-top{
@@ -18,15 +18,6 @@
     justify-content: space-around !important;
 }
 
-.other-link,.signup-text{
-color:yellow !important;
-font-size: 18px !important;
-font-family: Ubuntu,sans-serif;
-padding: 5px;
-}
-li .other-link{
-margin-top: 8%;
-}
 .user-box{
     background-color:#fff;
     padding:10px;

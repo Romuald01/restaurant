@@ -1,6 +1,7 @@
 <?php 
 
 include("connection.php");
+include("login_u.php");
 
 ?>
 <style>
@@ -13,7 +14,7 @@ include("connection.php");
 </style>
 <?php include("includes/header.php"); ?>
   <div class="container" style="margin-top: 4%; margin-bottom: 2%;">
-    <form role="form" action="customer_registered_success.php" method="POST" >
+    <form role="form" action="" method="POST" >
       <div class="container">
         <div class="row signin-and-login-form">
             <div class="col-md-5">
@@ -21,10 +22,10 @@ include("connection.php");
                 <p class="signin-greeting">Welcome back! Sign in to your Account</p>
                 <form action="#" method="post" class="signin-form">
                     <label for="email">Email Address</label>
-                    <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>" required style="width:100%">
+                    <input type="email" placeholder="Example@gmail.com" name="email" required style="width:100%">
                     <label for="">password</label>
                     <div class="input-container">
-                        <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+                        <input type="password" placeholder="Password" name="password"  required>
                         <i class="material-icons visibility">visibility_off</i>
                     </div>
                     <div class="password-sub-content">
@@ -37,7 +38,7 @@ include("connection.php");
                             <a href="forget-password.php" class="change-psw-link">forget password?</a>
                         </div>
                     </div>   
-                    <button class="btn  btn-login mt-3" name="login"><span class="text">Login</span></button>
+                    <button class="btn  btn-login mt-3" name="submit"><span class="text">Login</span></button>
                     </button> 
                     <span class="or-sign-with-text">Or sign in with</span>
                     <div class="other-social">
