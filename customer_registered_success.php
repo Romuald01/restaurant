@@ -69,15 +69,13 @@
 require 'connection.php';
 // $conn = Connect();
 
-$fullname = $conn->real_escape_string($_POST['fullname']);
+$firstname = $conn->real_escape_string($_POST['fullname']);
 $lastname = $conn->real_escape_string($_POST['lastname']);
-$contact = $conn->real_escape_string($_POST['contact']);
 $email = $conn->real_escape_string($_POST['email']);
+$contact = $conn->real_escape_string($_POST['contact']);
 $password = $conn->real_escape_string($_POST['password']);
-// if(isset($_POST['name'])){
 
-
-$query = "INSERT into customers(fullname,lastname,contact,email,password) VALUES('" . $fullname . "','" . $lastname . "','" . $contact . "','" . $email . "','" . $password ."')";
+$query = "INSERT into CUSTOMER(username,fullname,email,contact,password) VALUES('" . $firstname . "','" . $lastname . "','" . $email . "','" . $contact . "','" . $password ."')";
 $success = $conn->query($query);
 
 if (!$success){
@@ -91,7 +89,7 @@ $conn->close();
 
 <div class="container">
 	<div class="jumbotron" style="text-align: center;">
-		<h2> <?php echo "Welcome $fullname!" ?> </h2>
+		<h2> <?php echo "Welcome $firstname!" ?> </h2>
 		<h1>Your account has been created.</h1>
 		<p>Login Now from <a href="customerlogin.php">HERE</a></p>
 	</div>

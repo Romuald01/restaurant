@@ -1,12 +1,19 @@
 <?php 
-include("includes/header.php");
-// include("connection.php");
-// include("customer_registered_success.php");
 
+include("connection.php");
 
 ?>
+<style>
+    .signin-form input[type=email]{
+        padding:3px;
+    }
+    .input-group-addon{
+        background-color:none !important;
+    }
+</style>
+<?php include("includes/header.php"); ?>
   <div class="container" style="margin-top: 4%; margin-bottom: 2%;">
-    <form role="form" action="customer_registered_success.php" method="POST">
+    <form role="form" action="customer_registered_success.php" method="POST" >
       <div class="container">
         <div class="row signin-and-login-form">
             <div class="col-md-5">
@@ -14,7 +21,7 @@ include("includes/header.php");
                 <p class="signin-greeting">Welcome back! Sign in to your Account</p>
                 <form action="#" method="post" class="signin-form">
                     <label for="email">Email Address</label>
-                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" value="<?php echo $_POST['email']; ?>" required style="width:100%">
                     <label for="">password</label>
                     <div class="input-container">
                         <input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
@@ -22,7 +29,7 @@ include("includes/header.php");
                     </div>
                     <div class="password-sub-content">
                         <div class="input-group">
-                            <span class="input-group-addon">
+                            <span class="">
                                 <input type="checkbox" aria-label="Checkbox for following text input"><span class="remember-text">Remember Me</span>
                             </span>
                         </div>
@@ -58,21 +65,21 @@ include("includes/header.php");
             <div class="col-md-5">
                 <h3 class="signin-heading">Create New Account</h3>
                 <p class="signin-greeting">Create your very own Kilimanjaro Account</p>
-                <form role="form" action="customer_registered_success.php" method="POST class="signin-form create-account-form">
-                    <label for="firstname">First Name</label>
-                    <input type="text" placeholder="First Name*" name="fullname" required>
+                <form role="form" action="customer_registered_success.php" method="POST" class="signin-form create-account-form">
+                    <label for="firstname" style="width:100%">First Name</label>
+                    <input type="text" placeholder="First Name*" name="fullname" required style="width:100%">
                     <label for="firstname">Last Name</label>
-                    <input type="text" placeholder="lastname*" name="lastname" required>
-                    <label for="firstname">Phone Number</label>
-                    <input type="number" placeholder="+2349063514430*" name="contact"  required>
+                    <input type="text" placeholder="lastname*" name="lastname" required style="width:100%">
                     <label for="email">Email Address</label>
-                    <input type="email" placeholder="Example@gmail.com" name="email" required>
+                    <input type="email" placeholder="Example@gmail.com" name="email" required style="width:100%">
+                    <label for="firstname">Phone Number</label>
+                    <input type="number" placeholder="+2349063514430*" name="contact"  required style="width:100%">
                     <label for="">password</label>
-                    <div class="input-container">
+                    <div class="input-container mb-3">
                         <input type="password" placeholder="Password" class="create-password create-accpsw" name="password" required>
                         <i class="material-icons visibility visibility__2">visibility_off</i>
                     </div>
-                    <button class="btn btn-login mt-3" name="nam"><span class="text">Register</span></button>
+                    <button class="btn btn-login mt-3"><span class="text">Register</span></button>
 
                     <span class="or-sign-with-text my-2 d-block">Or sign in with</span>
                     <div class="other-social">
@@ -95,5 +102,5 @@ include("includes/header.php");
       </div>
     </form>
 </div>
-<?php include("includes/app-store-div.php")?>
-<?php include("includes/footer.php")?>
+<?php include("includes/app-store-div.php");?>
+<?php include("includes/footer.php");?>

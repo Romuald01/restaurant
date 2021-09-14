@@ -10,14 +10,12 @@ session_start();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"/>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/iconfont/material-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/collapse.css">
-  <link rel="stylesheet" type="text/css" href="css/partheader.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/store.css">
   <link rel="stylesheet" type="text/css" href="css/career.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
@@ -27,7 +25,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="css/popuptext.css">
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <link rel="stylesheet" href="css/account.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
   <title>Kilimanjaro restuarant</title>
 </head>
 
@@ -60,7 +58,7 @@ session_start();
         }
 }
 </style>
-    <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation" style="background-color:#dc042a;">
+    <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation"style="background-color: #dc042a;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
@@ -79,10 +77,14 @@ if(isset($_SESSION['login_user1'])){
 
 ?>
 
-
-          <ul class="nav navbar-nav">
-          <li class="nav-item">
-                        <a class="nav-link" href="index.php">Order Now</a>
+<style>
+  .nav-link{
+    color:#fff !important;
+  }
+</style>
+          <ul class="nav navbar-nav" style="border:1px solid #000;height:200px;"
+          <li class="nav-item" style="color:#fff;">
+                        <a class="nav-link" style="color:#fff;" href="foodlist.php">Order Now</a>
                         <hr class="cool cool--m">
                         </li>
                         <li class="nav-item">   
@@ -158,7 +160,7 @@ else {
 
 <ul class="nav navbar-nav">
                         <li class="nav-item">
-                        <a class="nav-link" href="index.php">Order Now</a>
+                        <a class="nav-link" href="foodlist.php">Order Now</a>
                         <hr class="cool cool--m">
                         </li>
                         <li class="nav-item">   
@@ -186,7 +188,7 @@ else {
                <span class="signup-text-div"><span class="signup-text"> Sign Up</span><span class="caret"></span></span> </a>
                 <ul class="dropdown-menu">
                   <li> <a href="customersignup.php"> User Sign-up</a></li>
-                  <li> <a href="managersignup.php"> Manager Sign-up</a></li>
+                  <!-- <li> <a href="managersignup.php"> Manager Sign-up</a></li> -->
                  </ul>
             </li>
     </ul>

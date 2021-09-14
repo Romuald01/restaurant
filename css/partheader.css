@@ -1,3 +1,12 @@
+@media screen and (min-width:1025px){
+    .navbar-fixed-top{
+        height: 70px;
+    }
+}
+.navbar-fixed-top{
+    height:70px;  
+}
+
 .fixed-top{
     background-color: #dc042a !important;
     padding-top: 3px !important;
@@ -10,7 +19,7 @@
 }
 
 .other-link,.signup-text{
-color:#fff !important;
+color:yellow !important;
 font-size: 18px !important;
 font-family: Ubuntu,sans-serif;
 padding: 5px;

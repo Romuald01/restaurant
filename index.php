@@ -1,9 +1,7 @@
-<?php 
+<?php
+include("includes/header.php");
 
-include"includes/header.php";
-?>   
-  <div class="container-fluid">
-    <!-- <div class="row"> -->
+?>
     <div class="container">
         <div class="row ordering-headings">
                 <div class="col-md-12 ordering-heading-contents">
