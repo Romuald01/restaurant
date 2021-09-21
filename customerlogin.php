@@ -65,11 +65,11 @@ include('includes/header.php');
 
         <div class="row">
           <div class="form-group col-xs-4">
-              <button class="btn btn-primary" name="submit" type="submit" value=" Login ">Submit</button>
+              <button class="btn btn-primary" name="submit" type="submit" value="Login">Submit</button>
           </div>
 
         </div>
-        <label style="margin-left: 5px;">or</label> <br>
+        <label style="margin-left: 5px;">or</label><br>
        <label style="margin-left: 5px;"><a href="customersignup.php">Create a new account.</a></label>
 
         </form>

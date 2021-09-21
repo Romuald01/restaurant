@@ -5,7 +5,6 @@ $dbuser = "root";
 $dbpass = "";
 $dbname = "foodordermodel";
 
-
 // for connection
 $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 

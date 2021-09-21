@@ -2,7 +2,6 @@
 session_start();
 ?>
 
-
 <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -33,8 +32,13 @@ session_start();
   <body>
   <style>
   .signup-text{
-    margin-top: -30px !important;
-    color:yellow !important;
+    margin-top: -40px !important;
+    color:#fff !important;
+  }
+  .signup-text-div{
+    position: absolute;
+    bottom:-35%;
+    width:100px;
   }
   .restaurant-logo{
     margin-top: -10px !important;
@@ -61,13 +65,11 @@ session_start();
  
 .other-link{
 color:#fff !important;
-/* font-size: 18px !important; */
-/* font-family: Ubuntu,sans-serif; */
 
 }
 li .other-link{
 margin-top: 8%;
-} */
+}
 </style>
     <nav class="navbar navbar-inverse navbar-fixed-top navigation-clean-search" role="navigation"style="background-color: #dc042a;">
       <div class="container">
@@ -147,8 +149,6 @@ else if (isset($_SESSION['login_user2'])) {
                         <a class="nav-link" href="contactus.php">Contact</a>
                         <hr class="cool cool--m">
                         </li>
-
-            <!-- <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zoneeee </a></li> -->
             <li><a href="cart.php" class="other-link">Cart
               (<?php
               if(isset($_SESSION["cart"])){
@@ -159,10 +159,9 @@ else if (isset($_SESSION['login_user2'])) {
                 echo "0";
               ?>)
              </a></li>
-             
-            <li><a href="#" class="other-link user-box"style="margin-top:4px;font-size:18px;"><?php echo $_SESSION['login_user2']; ?> </a>
+            <li><a href="#" class="other-link user-box" style="margin-top:4px;font-size:18px;"><?php echo $_SESSION['login_user2']; ?></a>
           </li>
-            <li><a href="logout_u.php" class="other-link">Log Out </a></li>
+             <li><a href="logout_u.php" class="other-link">Log Out</a></li>
           </ul>
   <?php        
 }
@@ -197,10 +196,9 @@ else {
                         </li>
             <li>
               <a href="#" class="dropdown-toggle signup-box-div" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               <span class="signup-text-div"><span class="signup-text"> Sign Up</span><span class="caret"></span></span> </a>
+               <span class="signup-text-div"><span class="signup-text">Sign Up</span><span class="caret"></span></span> </a>
                 <ul class="dropdown-menu">
                   <li> <a href="customersignup.php"> User Sign-up</a></li>
-                  <!-- <li> <a href="managersignup.php"> Manager Sign-up</a></li> -->
                  </ul>
             </li>
     </ul>

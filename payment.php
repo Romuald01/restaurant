@@ -10,7 +10,7 @@ header("location: customerlogin.php");
 <html>
 
   <head>
-    <title> Cart | Le Cafe' </title>
+    <title> Kilimanjaro Restaurant </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/payment.css">
@@ -52,7 +52,7 @@ header("location: customerlogin.php");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+          <a class="navbar-brand" style="background-color:#dc042a;height:100px;width:100%;" href="index.php"><img src="images/logo.svg" alt="restaurant logo"></a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -164,17 +164,17 @@ $gtotal = 0;
         ?>
         <div class="container">
           <div class="jumbotron">
-            <h1>Choose your payment option</h1>
+            <h1 class="payment-heading-option">Choose your payment option</h1>
           </div>
         </div>
         <br>
-<h1 class="text-center">Grand Total: &#8358;<?php echo "$gtotal"; ?>/-</h1>
-<h5 class="text-center">including all service charges. (no delivery charges applied)</h5>
+<h1 class="text-center grand-total-main">Grand Total: &#8358;<?php echo "$gtotal"; ?>/-</h1>
+<h5 class="text-center grand-total-sub">including all service charges. (no delivery charges applied)</h5>
 <br>
 <h1 class="text-center">
   <a href="cart.php"><button class="btn btn-warning"><span class="glyphicon glyphicon-circle-arrow-left"></span> Go back to cart</button></a>
   <a href="onlinepay.php"><button class="btn btn-success"><span class="glyphicon glyphicon-credit-card"></span> Pay Online</button></a>
-  <a href="COD.php"><button class="btn btn-success"><span class="glyphicon glyphicon-"></span> Cash On Delivery</button></a>
+  <a href="COD.php"><button class="btn btn-success btn-third"><span class="glyphicon glyphicon-"></span> Cash On Delivery</button></a>
 </h1>
         
 
@@ -182,3 +182,26 @@ $gtotal = 0;
 <br><br><br><br><br><br>
         </body>
 </html>
+<style>
+  @media screen and (max-width:425px){
+      .payment-heading-option{
+        font-size: 1.5rem;
+        justify-content:center;
+        text-align:center;
+      }
+      .jumbotron{
+        margin-bottom:none !important; 
+      }
+      .grand-total-main{
+        font-size: 18px;
+      }
+  }
+  @media screen and (max-width:375px){
+    .jumbotron{
+     padding:10px 10px !important; 
+      }
+    .btn-third{
+      margin-top: 10px;
+    }
+  }
+</style>

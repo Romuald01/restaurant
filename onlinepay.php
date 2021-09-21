@@ -1,7 +1,7 @@
 <?php
 session_start();
 require 'connection.php';
-$conn = Connect();
+// $conn = Connect();
 if(!isset($_SESSION['login_user2']) || !isset($_SESSION['cart'])){
 header("location: customerlogin.php"); 
 }
@@ -11,7 +11,7 @@ header("location: customerlogin.php");
 <html>
 
   <head>
-    <title> Online Payment | Le Cafe' </title>
+    <title>Kilimanjaro Restaurant </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/COD.css">
@@ -55,7 +55,7 @@ header("location: customerlogin.php");
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo-red.svg" alt=""></a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -202,7 +202,7 @@ else {
                              <a href="payment.php"><input type="submit" class="btn btn-danger btn-block" value="CANCEL" required="" /></a>   
                             </div>
                             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                              <a href="COD.php"><input type="submit" class="btn btn-success btn-block" value="PAY NOW" required="" /></a>  
+                              <a href="COD.php"><input type="submit" class="btn btn-success btn-block mt-3" value="PAY NOW" required="" /></a>  
                             </div>
                         </div>
 

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 22, 2019 at 02:53 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.3
+-- Generation Time: Sep 21, 2021 at 03:03 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `foodorder`
+-- Database: `foodordermodel`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,6 @@ SET time_zone = "+00:00";
 CREATE TABLE `contact` (
   `Name` varchar(250) NOT NULL,
   `Email` varchar(250) NOT NULL,
-  `Mobile` varchar(250) NOT NULL,
   `Subject` varchar(250) NOT NULL,
   `Message` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -40,11 +39,28 @@ CREATE TABLE `contact` (
 -- Dumping data for table `contact`
 --
 
-INSERT INTO `contact` (`Name`, `Email`, `Mobile`, `Subject`, `Message`) VALUES
-('CHANDAN KUMAR', 'ckj40856@gmail.com', '9487810674', 'sa', ''),
-('CHANDAN KUMAR', 'ckj40856@gmail.com', '9487810674', 'sa', ''),
-('BIRJU KUMAR', 'ckj40856@gmail.com', '8903079750', 'asd', 'asdasdasd'),
-('CHANDAN KUMAR', 'ckj40856@gmail.com', '9487810674', 'asd', 'hfgdsfsx');
+INSERT INTO `contact` (`Name`, `Email`, `Subject`, `Message`) VALUES
+('CHANDAN KUMAR', 'ckj40856@gmail.com', 'sa', ''),
+('CHANDAN KUMAR', 'ckj40856@gmail.com', 'sa', ''),
+('BIRJU KUMAR', 'ckj40856@gmail.com', 'asd', 'asdasdasd'),
+('CHANDAN KUMAR', 'ckj40856@gmail.com', 'asd', 'hfgdsfsx'),
+('rose', 'rose@gmail.com', 'about my order', 'i order and it is not deliver till now'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('tolu', 'adeleke@gmail.com', 'seyi', 'i love your food'),
+('', '', '', ''),
+('', '', '', ''),
+('', '', '', ''),
+('james', 'james@gmail.com', '09088776654', 'please i nedd food\r\n'),
+('james', 'james@gmail.com', '09088776654', 'please i nedd food\r\n'),
+('dayo ', 'seun@gmail.com', 'adeleke', 'i can\'t order now'),
+('', '', '', ''),
+('james', 'james@gmail.com', '09088114433', 'I need cake and drinks'),
+('fayose', 'fayose@gmail.com', '0908811233', 'i need groceries');
 
 -- --------------------------------------------------------
 
@@ -57,7 +73,6 @@ CREATE TABLE `customer` (
   `fullname` varchar(30) NOT NULL,
   `email` varchar(30) NOT NULL,
   `contact` varchar(30) NOT NULL,
-  `address` varchar(50) NOT NULL,
   `password` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -65,12 +80,43 @@ CREATE TABLE `customer` (
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`username`, `fullname`, `email`, `contact`, `address`, `password`) VALUES
-('birju', 'BIRJU KUMAR', 'bkm123r@gmail.com', '8903079750', 'Pondicherry University, SRK HOSTEL ROOM NUMBER-59,', 'Birju123@'),
-('ckumar', 'CHANDAN KUMAR', 'ckj40856@gmail.com', '9487810674', 'Pondicherry University, SRK HOSTEL ROOM NUMBER-59,', 'Ckumar123@'),
-('nidha', 'nidha', 'nidha@gmail.com', '998696572', 'Maharashtra', 'suhail'),
-('pratheek083', 'Pratheek Shiri', 'pratheek@gmail.com', '8779546521', 'Hyderabad', 'pratheek'),
-('rakshithk00', 'Rakshith Kotian', 'rakshith@gmail.com', '9547123658', 'Gujarath', 'rakshith');
+INSERT INTO `customer` (`username`, `fullname`, `email`, `contact`, `password`) VALUES
+('', '', 'babe@gmail.com', '778899', 'babe'),
+('accra', 'adeleke', 'adeleke@gmail.com', '09012234566', 'adeleke'),
+('acne', 'babe', 'babe@gmail.com', '778899', 'babe'),
+('adeayo', 'jane', 'jane@gmail.com', '0908877112', 'jane'),
+('adeewa', 'shade', 'shade@gmail.com', '09088776655', 'shade'),
+('adewale', 'adeleke', 'wale@gmail.com', '090888776', 'wale'),
+('birju', 'BIRJU KUMAR', 'bkm123r@gmail.com', '8903079750', 'Birju123@'),
+('ckumar', 'CHANDAN KUMAR', 'ckj40856@gmail.com', '9487810674', 'Ckumar123@'),
+('clara', 'constance', 'clara@gmail.com', '00909887', 'clara'),
+('clement', 'myles', 'myles@gmail.com', '13243433222', 'myles'),
+('dave', 'alex', 'alex@gmail.com', '09088776633', 'alex'),
+('Degbe Romuald', 'soft', 'software@gmail.com', '0908766333', 'soct'),
+('dele', 'posi', 'posi@gmail.com', '0999887776', 'ola'),
+('fayose', 'adeleke', 'adele@gmail.com', '09012345678', 'adeleke'),
+('fisayo', 'adesewa', 'ade@gmail.com', '09088112233', 'qwerty'),
+('Francis', 'Smith', 'francis@gmail.com', '09088776655', 'francis'),
+('gbenga', 'anu', 'anu@gmail.com', '090887766', '123'),
+('george', 'john', 'george@gmail.com', '09088112233', '123'),
+('guy', 'boy', 'boy@gmail.com', '09088771122', 'boy'),
+('Idowu ', 'emmanuel', 'idowu@gmail.com', '0908811233', '123'),
+('jane', 'luara', 'raymond@gmail.com', '09088776611', 'raymond'),
+('kehinde', 'kenny', 'kenny@gmail.com', '09088090900', 'kenny'),
+('nidha', 'nidha', 'nidha@gmail.com', '998696572', 'suhail'),
+('ojo', 'ralia', 'ralia@gmail.com', '09088771122', 'ralia'),
+('pratheek083', 'Pratheek Shiri', 'pratheek@gmail.com', '8779546521', 'pratheek'),
+('rakshithk00', 'Rakshith Kotian', 'rakshith@gmail.com', '9547123658', 'rakshith'),
+('rose01', 'Roseline', 'rose@gmail.com', '09088776655', 'rose'),
+('sade', 'malik', 'malik@gmail.com', '09088112233', 'malik'),
+('schema', 'shade', 'schema@gmail.com', '09088776655', '123'),
+('SEUN', 'DELE', 'dele@gmail.com', '09088112233', 'seun'),
+('sewa', 'ola', 'ola@gmail.com', '0809888', 'ola'),
+('Seyi', 'adeleke', 'seyi@gmailcom', '09088776655', 'seyi'),
+('smart', 'Lloyd', 'smart@gmail.com', '0908812342', 'smart'),
+('taiwo', 'dare', 'dare@gmail.com', '09088112233', 'dare'),
+('tayo', 'pelumi', 'tayo@gmail.com', '1234567890', 'tayo'),
+('wasiu', 'david', 'david@gmail.com', '09088771122', 'david');
 
 -- --------------------------------------------------------
 
@@ -93,26 +139,27 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`F_ID`, `name`, `price`, `description`, `R_ID`, `images_path`, `options`) VALUES
-(58, 'Juicy Masala Paneer Kathi Roll', 40, 'Juicy Masala Paneer Kathi Roll loaded with Masala Paneer chunks, onion & Mayo.', 1, 'images/Masala_Paneer_Kathi_Roll.jpg', 'ENABLE'),
-(59, 'Meurig Fish', 60, 'Try Meurig - A whole Pomfret fish grilled with tangy marination & served with grilled onions and tomatoes.', 2, 'images/Meurig.jpg', 'ENABLE'),
-(60, 'Chocolate Hazelnut Truffle', 99, 'Lose all senses over this very delicious chocolate hazelnut truffle.', 3, 'images/Chocolate_Hazelnut_Truffle.jpg', 'ENABLE'),
-(61, 'Happy Happy Choco Chip Shake', 80, 'Happy Happy Choco Chip Shake - a perfect party sweet treat.', 1, 'images/Happy_Happy_Choco_Chip_Shake.jpg', 'ENABLE'),
-(62, 'Spring Rolls', 65, 'Delicious Spring Rolls by Dragon Hut, Delhi. Order now!!!', 2, 'images/Spring_Rolls.jpg', 'ENABLE'),
-(63, 'Baahubali Thali', 75, 'Baahubali Thali is accompanied by Kattapa Biriyani, Devasena Paratha, Bhalladeva Patiala Lassi', 3, 'images/Baahubali_Thali.jpg', 'ENABLE'),
-(65, 'Coffee', 25, 'concentrated coffee made by forcing pressurized water through finely ground coffee beans.', 4, 'images/coffee.jpg', 'DISABLE'),
-(66, 'Tea', 20, 'The simple elixir of tea is of our natural world.', 4, 'images/tea.jpg', 'DISABLE'),
-(68, 'Paneer', 85, 'it', 6, 'images/paneer pakora.jpg', 'DISABLE'),
-(69, 'Coffee', 25, 'concentrated coffee made by forcing pressurized water through finely ground coffee beans.', 2, 'images/coffee.jpg', 'ENABLE'),
-(70, 'Tea', 20, 'The simple elixir of tea is of our natural world.', 2, 'images/tea.jpg', 'ENABLE'),
-(71, 'Samosa', 40, 'Cocktail Crispy Samosa..', 2, 'images/samosa.jpg', 'ENABLE'),
-(72, 'Paneer Pakora', 45, 'it gives whole new dimension even to the most boring or dull vegetable', 2, 'images/paneer pakora.jpg', 'ENABLE'),
-(73, 'Puff', 35, 'Vegetable Puff, a snack with crisp-n-flaky outer layer and mixed vegetables stuffing', 2, 'images/puff.jpg', 'ENABLE'),
-(74, 'Pizza', 200, 'Good and Tasty ', 2, 'Pizza.jpg', 'DISABLE'),
-(75, 'French Fries', 60, 'Pure Veg and Tasty.', 2, 'frenchfries.jpg', 'DISABLE'),
-(76, 'Pakora', 35, 'Pure Vegetable and Tasty.', 2, 'images/Pakora.jpg', 'DISABLE'),
-(77, 'Pizza', 200, 'Pure Vegetable and Tasty.', 2, 'images/Pizza.jpg', 'ENABLE'),
-(78, 'French Fries', 75, 'Pure Veg and Tasty.', 2, 'images/frenchfries.jpg', 'ENABLE'),
-(79, 'Pakora', 45, 'TASTY', 2, 'images/Pakora.jpg', 'ENABLE');
+(58, 'Delicious Spaggetti', 400, 'Delicious Spaggetti onion.', 1, 'menu-imgs/spaggetti.png', 'ENABLE'),
+(59, 'Sharwama', 600, 'Shawama Pomfret fish grilled & with grilled onions.', 2, 'menu-imgs/sharwama.png\r\n', 'ENABLE'),
+(60, 'Chocolate Cake', 800, 'Lose all senses over this very delicious chocolate cake.', 3, 'menu-imgs/Chocolate_Hazelnut_Truffle.jpg', 'ENABLE'),
+(61, 'Semo', 500, 'Semo with Egusi Soup', 1, 'menu-imgs/Semo.jpeg\r\n', 'ENABLE'),
+(62, 'Fried dodo', 500, 'Delicious Fried Dodo', 2, 'menu-imgs/Frieddodo.jpeg', 'ENABLE'),
+(63, 'Fried Rice', 600, 'Delicious and hot fried rice', 3, 'menu-imgs/Friedrice.jpeg', 'ENABLE'),
+(65, 'Hollandia-Yoghurt', 1200, 'Hollandia-Yoghurt-Drink-500ml', 4, 'menu-imgs/Hollandia-Yoghurt-Drink-500ml.png', 'ENABLE'),
+(66, 'Eva Water', 350, 'Chilled Eva Water 1liter', 4, 'menu-imgs/evawater.png', 'ENABLE'),
+(68, 'Burger', 300, 'Sweet and Tasty Burger', 6, 'menu-imgs/burger.jpg', 'ENABLE'),
+(69, 'Breaded Chicken', 1500, 'Fried and Tasty Breaded Chicken', 2, 'menu-imgs/BreadedChicken.jpeg', 'ENABLE'),
+(70, 'Coca-Cola', 300, 'Chilled Coca-Cola Drink', 2, 'menu-imgs/coca-cola.png', 'ENABLE'),
+(71, 'Samosa', 600, 'Cocktail Crispy Samosa..', 2, 'menu-imgs/samosa.jpg', 'ENABLE'),
+(72, 'Paneer Pakora', 1000, 'it gives whole new dimension even to the most boring or dull vegetable', 2, 'menu-imgs/paneer pakora.jpg', 'ENABLE'),
+(73, 'Puff', 350, 'Vegetable Puff, a snack with crisp-n-flaky outer layer and mixed vegetables stuffing', 2, 'menu-imgs/puff.jpg', 'ENABLE'),
+(74, 'Pizza', 200, 'Good and Tasty ', 2, 'menu-imgs/roll.jpg', 'ENABLE'),
+(75, 'Spicy rice', 600, 'Delicious Spicy rice and Tasty.', 2, 'menu-imgs/Spicyrice.jpeg', 'ENABLE'),
+(76, 'Chi Exotic drink', 350, 'Chilled Chi Exotic drink.', 2, 'menu-imgs/Chi-exotic.jpg', 'ENABLE'),
+(77, 'Fried Meat', 200, 'delicious and meat Tasty.', 2, 'menu-imgs/friedmeat.png', 'ENABLE'),
+(78, 'French Fries', 750, 'Pure Veg and Tasty.', 2, 'menu-imgs/frenchfries.jpg', 'ENABLE'),
+(79, ' Beans', 400, 'Delicious & Tasty Beans', 2, 'menu-imgs/Beans.jpeg', 'ENABLE'),
+(80, 'Edikankong soup', 550, 'Delicious and tasty Edikankong soup ', 1, 'menu-imgs/Edikankongsoup.jpeg', 'ENABLE');
 
 -- --------------------------------------------------------
 
@@ -229,7 +276,15 @@ INSERT INTO `orders` (`order_ID`, `F_ID`, `foodname`, `price`, `quantity`, `orde
 (65, 70, 'Tea', 20, 4, '2019-04-17', 'ckumar', 2),
 (66, 72, 'Paneer Pakora', 45, 2, '2019-04-17', 'ckumar', 2),
 (67, 60, 'Chocolate Hazelnut Truffle', 99, 1, '2019-04-18', 'ckumar', 3),
-(68, 71, 'Samosa', 40, 1, '2019-04-18', 'ckumar', 2);
+(68, 71, 'Samosa', 40, 1, '2019-04-18', 'ckumar', 2),
+(69, 61, 'Happy Happy Choco Chip Shake', 80, 1, '2021-09-09', 'rose01', 1),
+(70, 69, 'Coffee', 25, 1, '2021-09-09', 'rose01', 2),
+(71, 58, 'Delicious Spaggetti', 40, 1, '2021-09-10', 'rose01', 1),
+(72, 58, 'Delicious Spaggetti', 400, 5, '2021-09-10', 'rose01', 1),
+(73, 58, 'Delicious Spaggetti', 400, 5, '2021-09-10', 'rose01', 1),
+(74, 58, 'Delicious Spaggetti', 400, 1, '2021-09-10', 'rose01', 1),
+(75, 69, 'Breaded Chicken', 1500, 1, '2021-09-10', 'rose01', 2),
+(76, 58, 'Delicious Spaggetti', 400, 1, '2021-09-10', 'rose01', 1);
 
 -- --------------------------------------------------------
 
@@ -265,7 +320,8 @@ INSERT INTO `restaurants` (`R_ID`, `name`, `email`, `contact`, `address`, `M_ID`
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
-  ADD PRIMARY KEY (`username`);
+  ADD PRIMARY KEY (`username`) USING BTREE,
+  ADD KEY `username` (`username`);
 
 --
 -- Indexes for table `food`
@@ -305,13 +361,13 @@ ALTER TABLE `restaurants`
 -- AUTO_INCREMENT for table `food`
 --
 ALTER TABLE `food`
-  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `F_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `order_ID` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=176;
 
 --
 -- AUTO_INCREMENT for table `restaurants`

@@ -1,7 +1,6 @@
 <?php
 session_start();
 require 'connection.php';
-// $conn = Connect();
 if(!isset($_SESSION['login_user2'])){
 header("location: customerlogin.php"); 
 }
@@ -12,7 +11,7 @@ unset($_SESSION["cart"]);
 <html>
 
   <head>
-    <title> Cart | Le Cafe' </title>
+    <title> kilimanjaro Restaurant </title>
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/COD.css">
@@ -56,7 +55,7 @@ unset($_SESSION["cart"]);
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Le Cafe'</a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo-red.svg" alt="restaurant-logo"></a>
         </div>
 
         <div class="collapse navbar-collapse " id="myNavbar">
@@ -135,12 +134,12 @@ else {
 
         <div class="container">
           <div class="jumbotron">
-            <h1 class="text-center" style="color: green;"><span class="glyphicon glyphicon-ok-circle"></span> Order Placed Successfully.</h1>
+            <h1 class="text-center" style="color: #dc042a;"><span class="glyphicon glyphicon-ok-circle"></span> Order Placed Successfully.</h1>
           </div>
         </div>
         <br>
 
-<h2 class="text-center"> Thank you for Ordering at Le Cafe'! The ordering process is now complete.</h2>
+<h2 class="text-center thanks-text"> Thank you for Ordering at Kilimanjaro! The ordering process is now complete.</h2>
 
 <?php 
   $num1 = rand(100000,999999); 
@@ -154,3 +153,11 @@ else {
         </body>
 
 </html>
+<style>
+  .jumbotron{
+    margin-bottom:0 !important;
+  }
+  .thanks-text{
+    font-size: 18px;
+  }
+</style>
